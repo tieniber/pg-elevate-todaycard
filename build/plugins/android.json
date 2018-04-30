@@ -131,7 +131,7 @@
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
     "cordova-android-play-services-gradle-release": {
-      "PLAY_SERVICES_VERSION": "11.8.0",
+      "PLAY_SERVICES_VERSION": "12.+",
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     }
   },

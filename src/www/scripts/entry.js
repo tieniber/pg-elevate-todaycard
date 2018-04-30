@@ -6,6 +6,7 @@ MxApp.onConfigReady(function(config) {
 
 MxApp.onClientReady(function(mx) {
     // Perform any custom operations on the Mendix client object here
+    alert("Hello Conner");
 });
 
 // Uncomment this function if you would like to control when app updates are performed

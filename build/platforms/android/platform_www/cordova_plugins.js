@@ -712,7 +712,7 @@ module.exports.metadata =
   "cordova-plugin-crosswalk-webview": "2.3.0",
   "com.crosswalk.cookies": "0.0.1",
   "cordova-android-support-gradle-release": "1.2.0",
-  "cordova-android-play-services-gradle-release": "1.2.0"
+  "cordova-android-play-services-gradle-release": "1.3.0"
 };
 // BOTTOM OF METADATA
 });

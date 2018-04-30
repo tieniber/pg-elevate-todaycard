@@ -45,7 +45,8 @@
   "dependencies": {
     "global": "^4.3.2",
     "mendix-hybrid-app-base": "^2.0.0",
-    "mustache-loader": "^1.4.0"
+    "mustache-loader": "^1.4.0",
+    "xml2js": "^0.4.19"
   },
   "devDependencies": {
     "shelljs": "^0.7.7",

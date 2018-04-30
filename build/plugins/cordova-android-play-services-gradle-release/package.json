@@ -1,27 +1,27 @@
 {
-  "_from": "cordova-android-play-services-gradle-release@1.2.0",
-  "_id": "cordova-android-play-services-gradle-release@1.2.0",
+  "_from": "cordova-android-play-services-gradle-release@1.3.0",
+  "_id": "cordova-android-play-services-gradle-release@1.3.0",
   "_inBundle": false,
-  "_integrity": "sha1-DKPuch9BzZeHua6CPmOjtKr/Cag=",
+  "_integrity": "sha1-PAU+DqNR3xxyl4vMzOsSGUO72IE=",
   "_location": "/cordova-android-play-services-gradle-release",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "cordova-android-play-services-gradle-release@1.2.0",
+    "raw": "cordova-android-play-services-gradle-release@1.3.0",
     "name": "cordova-android-play-services-gradle-release",
     "escapedName": "cordova-android-play-services-gradle-release",
-    "rawSpec": "1.2.0",
+    "rawSpec": "1.3.0",
     "saveSpec": null,
-    "fetchSpec": "1.2.0"
+    "fetchSpec": "1.3.0"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-android-play-services-gradle-release/-/cordova-android-play-services-gradle-release-1.2.0.tgz",
-  "_shasum": "0ca3ee721f41cd9787b9ae823e63a3b4aaff09a8",
-  "_spec": "cordova-android-play-services-gradle-release@1.2.0",
+  "_resolved": "https://registry.npmjs.org/cordova-android-play-services-gradle-release/-/cordova-android-play-services-gradle-release-1.3.0.tgz",
+  "_shasum": "3c053e0ea351df1c72978bcccceb121943bbd881",
+  "_spec": "cordova-android-play-services-gradle-release@1.3.0",
   "_where": "/Users/Conner/Documents/Mendix/_Customers/Elevate/TodayCard/phonegap/build",
   "author": {
     "name": "Dave Alden"
@@ -35,5 +35,5 @@
   "devDependencies": {},
   "license": "MIT",
   "name": "cordova-android-play-services-gradle-release",
-  "version": "1.2.0"
+  "version": "1.3.0"
 }

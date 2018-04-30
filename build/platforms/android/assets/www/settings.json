@@ -1,5 +1,5 @@
 {
-  "url": "https://todaycard.mendixcloud.com",
+  "url": "https://todaycard-test.mendixcloud.com",
   "enableOffline": false,
   "requirePin": false,
   "updateAsync": false,
