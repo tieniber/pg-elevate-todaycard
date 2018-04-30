@@ -1,0 +1,17 @@
+{
+  "test" : {
+    "name" : "TodayCard",
+    "identifier" : "com.mendixcloud.todaycard",
+    "url" : "https://todaycard-test.mendixcloud.com"
+  },
+  "acceptance" : {
+    "name" : "TodayCard",
+    "identifier" : "com.mendixcloud.todaycard",
+    "url" : "https://todaycard-accp.mendixcloud.com"
+  },
+  "production" : {
+    "name" : "TodayCard",
+    "identifier" : "com.mendixcloud.todaycard",
+    "url" : "https://todaycard.mendixcloud.com"
+  }
+}
