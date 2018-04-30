@@ -1,0 +1,42 @@
+{
+  "_from": "git+https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.3",
+  "_id": "cordova-build-architecture@1.0.3",
+  "_inBundle": false,
+  "_location": "/cordova-build-architecture",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.3",
+    "rawSpec": "https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.3",
+    "saveSpec": "git+https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.3",
+    "fetchSpec": "https://github.com/MBuchalik/cordova-build-architecture.git",
+    "gitCommittish": "v1.0.3"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/MBuchalik/cordova-build-architecture.git#1039509d0b5b8d4c51cfe29e7a6b7eca9373e0f3",
+  "_spec": "https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.3",
+  "_where": "/Users/Conner/Documents/Mendix/_Customers/Elevate/TodayCard/phonegap/build",
+  "author": {
+    "name": "Martin Buchalik"
+  },
+  "bugs": {
+    "url": "https://github.com/MBuchalik/cordova-build-architecture/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Experimental plugin to force one single arm or x86 build",
+  "homepage": "https://github.com/MBuchalik/cordova-build-architecture#readme",
+  "keywords": [
+    "cordova"
+  ],
+  "license": "MIT",
+  "name": "cordova-build-architecture",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBuchalik/cordova-build-architecture.git"
+  },
+  "version": "1.0.3"
+}

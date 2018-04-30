@@ -1,0 +1,92 @@
+Changelog
+=========
+
+2.4.0 - 2016-07-04
+------------------
+
+- Windows phone implementation.
+  [sgrebnov]
+
+- Pass javascript Error to cordova failure callbacks, cleanup.
+  [sgrebnov]
+
+2.3.1 - 2016-06-22
+------------------
+
+- Patch sjcl_ss.js to prevent cordova with browserify flag including a unnecessary huge crypto-browserify polyfill.
+  [yyfearth]
+
+2.3.0 - 2016-06-16
+------------------
+
+- Native AES on android devices that support it.
+  [demetris-manikas]
+
+2.2.4 - 2016-05-25
+------------------
+
+- Fix #30, allowing concurrent calls to securestarage in iOS,
+  by not persisting callbackId's.
+  [ggozad]
+
+2.2.3 - 2016-05-18
+------------------
+
+- Fix broken version number in plugin.xml.
+  [ggozad]
+
+2.2.2 - 2016-05-10
+------------------
+
+- Execute iOS commands in separate threads instead of the main thread.
+  [goshakkk / hellyeahllc]
+
+2.2.1 - 2016-02-09
+------------------
+
+- package.json meta.
+  [ggozad]
+
+2.2.0 - 2016-01-05
+------------------
+
+- Supporting iOS 7 without 'WhenPasscodeSetThisDeviceOnly' option.
+  [embedded-spirit]
+
+
+2.1.0 - 2015-10-29
+------------------
+
+- Keychain accessibility setting for iOS.
+  [schaumiii]
+
+
+2.0.0 - 2015-10-28
+------------------
+
+- Update to use npm.
+  [ggozad]
+
+1.1.2 - 2015-04-16
+------------------
+
+- Fix Android key creation conflict.
+  [demetris-manikas]
+
+1.1.1 - 2015-04-13
+------------------
+
+- Android cleanup.
+  [demetris-manikas]
+
+1.1.0 - 2015-04-01
+------------------
+
+- Support the browser platform.
+  [ggozad]
+
+1.0.0 - 2015-03-30
+------------------
+
+- Initial release.
+  [ggozad]

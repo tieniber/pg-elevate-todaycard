@@ -1,0 +1,8 @@
+{
+  "url": "https://todaycard.mendixcloud.com",
+  "enableOffline": false,
+  "requirePin": false,
+  "updateAsync": false,
+  "username": "",
+  "password": ""
+}

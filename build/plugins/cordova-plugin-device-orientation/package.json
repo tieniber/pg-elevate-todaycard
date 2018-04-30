@@ -1,0 +1,83 @@
+{
+  "_from": "cordova-plugin-device-orientation@1.0.3",
+  "_id": "cordova-plugin-device-orientation@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha1-GZ/dTb4k7PscWRuwFMXLUvz9HMw=",
+  "_location": "/cordova-plugin-device-orientation",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-device-orientation@1.0.3",
+    "name": "cordova-plugin-device-orientation",
+    "escapedName": "cordova-plugin-device-orientation",
+    "rawSpec": "1.0.3",
+    "saveSpec": null,
+    "fetchSpec": "1.0.3"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-device-orientation/-/cordova-plugin-device-orientation-1.0.3.tgz",
+  "_shasum": "199fdd4dbe24ecfb1c591bb014c5cb52fcfd1ccc",
+  "_spec": "cordova-plugin-device-orientation@1.0.3",
+  "_where": "/Users/Conner/Documents/Mendix/_Customers/Elevate/TodayCard/phonegap/build",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-device-orientation/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-device-orientation",
+    "platforms": [
+      "firefoxos",
+      "android",
+      "amazon-fireos",
+      "ubuntu",
+      "blackberry10",
+      "ios",
+      "wp7",
+      "wp8",
+      "windows8",
+      "tizen",
+      "browser"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Device Orientation Plugin",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-device-orientation#readme",
+  "keywords": [
+    "cordova",
+    "device",
+    "orientation",
+    "ecosystem:cordova",
+    "cordova-firefoxos",
+    "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-blackberry10",
+    "cordova-ios",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows8",
+    "cordova-tizen",
+    "cordova-browser"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-device-orientation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-device-orientation.git"
+  },
+  "scripts": {
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
+    "test": "npm run jshint"
+  },
+  "version": "1.0.3"
+}
