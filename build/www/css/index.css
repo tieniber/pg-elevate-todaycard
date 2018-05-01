@@ -21,13 +21,13 @@ button, input, select, textarea {
 }
 
 .mx-main-container, .mx-hybridapp-wrapper {
-    background-color: ;
-    color: ;
+    background-color: #0595DB;
+    color: #fff;
 }
 
 .mx-hybridapp-button {
-    color: ;
-    background-color: ;
+    color: #fff;
+    background-color: #76CA02;
 }
 
 .mx-hybridapp-login,

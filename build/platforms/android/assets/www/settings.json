@@ -1,8 +1,11 @@
 {
-  "url": "https://todaycard-test.mendixcloud.com",
+  "url": "http://10.104.109.71:8080",
   "enableOffline": false,
-  "requirePin": false,
   "updateAsync": false,
+  "persistentSession": {
+	  "enabled": true,
+	  "forceSecurity": true
+  },
   "username": "",
   "password": ""
 }

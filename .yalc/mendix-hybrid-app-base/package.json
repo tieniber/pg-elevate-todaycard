@@ -1,0 +1,52 @@
+{
+    "name": "mendix-hybrid-app-base",
+    "version": "2.0.5-f3ce67a9",
+    "description": "Mendix PhoneGap Build base package",
+    "scripts": {
+        "appbase": "node ./node_modules/webpack/bin/webpack --config ./webpack.config.appbase.js"
+    },
+    "main": "src/www/scripts/entry.js",
+    "directories": {
+        "lib": "src"
+    },
+    "files": [
+        "/config",
+        "/src",
+        "/*.json",
+        "/*.js",
+        "/*.md"
+    ],
+    "dependencies": {
+        "android-versions": "^1.3.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.4",
+        "babel-plugin-transform-regenerator": "^6.24.1",
+        "babel-polyfill": "^6.23.0",
+        "babel-preset-env": "^1.6.0",
+        "clean-webpack-plugin": "^0.1.19",
+        "copy-webpack-plugin": "^4.5.1",
+        "css-loader": "^0.26.4",
+        "html-webpack-include-assets-plugin": "^1.0.4",
+        "html-webpack-plugin": "^2.28.0",
+        "i18n-webpack-plugin": "^0.3.0",
+        "mustache": "^2.1.2",
+        "mustache-loader": "^1.4.0",
+        "sanitize-filename": "^1.6.1",
+        "style-loader": "^0.13.2",
+        "tiny-emitter": "^1.1.0",
+        "webpack": "^3.11.0",
+        "webpack-archive-plugin": "^3.0.0",
+        "webpack-merge": "^4.1.2"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:mendix/hybrid-app-base.git"
+    },
+    "license": "Apache-2.0",
+    "author": {
+        "name": "Kevin Vlaanderen",
+        "email": "kevin.vlaanderen@mendix.com",
+        "url": "https://developer.mendixcloud.com/link/profile/15218"
+    }
+}

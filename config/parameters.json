@@ -1,26 +1,31 @@
 {
-  "url" : "https://todaycard-test.mendixcloud.com",
-  "identifier" : "com.mendixcloud.todaycard",
-  "version" : "0.0.15",
-  "name" : "TodayCard",
-  "description" : null,
-  "iosEnabled" : true,
-  "androidEnabled" : true,
-  "requirePin" : false,
-  "enableOffline" : false,
-  "permissions" : {
-    "calendar" : true,
-    "camera" : true,
-    "photoLibrary" : true,
-    "contacts" : true,
-    "microphone" : true,
-    "geoLocation" : true,
-    "push" : true
-  },
-  "theme" : {
-    "background" : null,
-    "text" : null,
-    "button" : null,
-    "buttonCaption" : null
-  }
+    "url": "https://todaycard-test.mendixcloud.com",
+    "identifier": "com.mendixcloud.todaycard",
+    "version": "0.0.15",
+    "name": "TodayCard",
+    "description": null,
+    "iosEnabled": true,
+    "androidEnabled": true,
+    "requirePin": false,
+    "enableOffline": false,
+    "persistentSession":  {        
+        "enabled":  true,
+        "forceSecurity":  true,
+        "persistToken": true
+    },
+    "permissions": {
+        "calendar": true,
+        "camera": true,
+        "photoLibrary": true,
+        "contacts": true,
+        "microphone": true,
+        "geoLocation": true,
+        "push": true
+    },
+    "theme": {
+        "background": null,
+        "text": null,
+        "button": null,
+        "buttonCaption": null
+    }
 }

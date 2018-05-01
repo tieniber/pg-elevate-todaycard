@@ -133,6 +133,15 @@
     "cordova-android-play-services-gradle-release": {
       "PLAY_SERVICES_VERSION": "12.+",
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "cordova-plugin-privacyscreen": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "cordova-plugin-touch-id": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "cordova-plugin-android-fingerprint-auth": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
     }
   },
   "dependent_plugins": {}

@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "mendix-hybrid-app-base": {
+      "signature": "f3ce67a93e5319bd1467627c3db4c687",
+      "file": true,
+      "replaced": "^2.0.0"
+    }
+  }
+}

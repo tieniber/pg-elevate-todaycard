@@ -332,5 +332,29 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-privacyscreen": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-privacyscreen"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-touch-id": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-touch-id@3.2.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-android-fingerprint-auth": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-android-fingerprint-auth@1.4.0"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

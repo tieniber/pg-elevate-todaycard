@@ -668,6 +668,22 @@ module.exports = [
     "clobbers": [
       "cookies"
     ]
+  },
+  {
+    "id": "cordova-plugin-touch-id.TouchID",
+    "file": "plugins/cordova-plugin-touch-id/www/TouchID.js",
+    "pluginId": "cordova-plugin-touch-id",
+    "clobbers": [
+      "window.plugins.touchid"
+    ]
+  },
+  {
+    "id": "cordova-plugin-android-fingerprint-auth.FingerprintAuth",
+    "file": "plugins/cordova-plugin-android-fingerprint-auth/www/FingerprintAuth.js",
+    "pluginId": "cordova-plugin-android-fingerprint-auth",
+    "clobbers": [
+      "FingerprintAuth"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -712,7 +728,10 @@ module.exports.metadata =
   "cordova-plugin-crosswalk-webview": "2.3.0",
   "com.crosswalk.cookies": "0.0.1",
   "cordova-android-support-gradle-release": "1.2.0",
-  "cordova-android-play-services-gradle-release": "1.3.0"
+  "cordova-android-play-services-gradle-release": "1.3.0",
+  "cordova-plugin-privacyscreen": "0.3.1",
+  "cordova-plugin-touch-id": "3.2.0",
+  "cordova-plugin-android-fingerprint-auth": "1.4.0"
 };
 // BOTTOM OF METADATA
 });
