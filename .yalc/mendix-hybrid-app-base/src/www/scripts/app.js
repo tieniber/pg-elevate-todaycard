@@ -284,6 +284,16 @@ module.exports = (function() {
             };
 
             window.dojoConfig.offline = enableOffline;
+            window.dojoConfig.mx = {};
+            window.dojoConfig.mx.setupPin = function(message) {
+                return new Promise(function(resolve, reject) {
+                    PinView.configure(message, function(enteredPin) {
+                        PinView.confirm(enteredPin, resolve, reject);
+                    });
+                }.bind(this));
+            };
+            window.dojoConfig.mx.verifyPin = PinView.verify;
+            window.dojoConfig.mx.verifyFinger = FingerprintView.verify;
 
             if (cordova.platformId === "android") {
                 window.dojoConfig.ui.openUrlFn = function(url, fileName, windowName) {
@@ -838,6 +848,26 @@ module.exports = (function() {
 
                 window.location.reload(true);
             }
+        } else if (finger) { //NEW
+            try {
+                const token = await secureTokenStore.get();
+                console.log("TOKEN --> " + token);
+                if (token) {
+                    await FingerprintView.verify();
+
+                    console.info("Successfully verified fingerprint");
+                } else {
+                    console.info("No fingerprint and/or token");
+
+                    await logout();
+
+                }
+            } catch (e) {
+                console.info("Failed to verify fingerprint");
+
+                await logout();
+
+            }
         } else if (pin) {
             try {
                 const token = await secureTokenStore.get();
@@ -851,34 +881,15 @@ module.exports = (function() {
                     console.info("No pin and/or token");
 
                     await logout();
-                    await cleanUpRemains();
+
                 }
             } catch (e) {
                 console.info("Failed to verify pin");
 
                 await logout();
-                await cleanUpRemains();
+
             }
-        } else if (finger) { //NEW
-            try {
-                const token = await secureTokenStore.get();
-                console.log("TOKEN --> " + token);
-                if (token) {
-                    await FingerprintView.verify();
 
-                    console.info("Successfully verified fingerprint");
-                } else {
-                    console.info("No fingerprint and/or token");
-
-                    await logout();
-                    await cleanUpRemains();
-                }
-            } catch (e) {
-                console.info("Failed to verify fingerprint");
-
-                await logout();
-                await cleanUpRemains();
-            }
         } else {
             // something? (default for now)
             console.log("no credentials, fingerprint, or pin provided. Logging out.")

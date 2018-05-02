@@ -1,6 +1,6 @@
 {
     "name": "mendix-hybrid-app-base",
-    "version": "2.0.5-f3ce67a9",
+    "version": "2.0.5-097fdb0e",
     "description": "Mendix PhoneGap Build base package",
     "scripts": {
         "appbase": "node ./node_modules/webpack/bin/webpack --config ./webpack.config.appbase.js"

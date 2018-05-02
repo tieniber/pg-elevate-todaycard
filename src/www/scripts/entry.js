@@ -2,6 +2,7 @@ var MxApp = require("mendix-hybrid-app-base");
 
 MxApp.onConfigReady(function(config) {
     // Perform any custom operations on the dojoConfig object here
+    window.localStorage.setItem("mx-user-onboarded", window.localStorage.getItem("mx-user-onboarded") || !!0);
 });
 
 MxApp.onClientReady(function(mx) {
@@ -12,7 +13,8 @@ MxApp.onClientReady(function(mx) {
         return mx.session.sessionStore.remove()
             .then(function() {
                 return new Promise(function(resolve, reject) {
-                    window.localStorage.setItem("mx-user-finger", "");
+                    window.localStorage.setItem("mx-user-finger", "false");
+                    window.localStorage.setItem("mx-user-pin", "false");
                     console.log("killing session on the server");
                     window.mx.data.action({
                         params: {
