@@ -51,7 +51,6 @@
       "cordova-android-play-services-gradle-release": {
         "PLAY_SERVICES_VERSION": "12.+"
       },
-      "cordova-plugin-privacyscreen": {},
       "cordova-plugin-touch-id": {},
       "cordova-plugin-android-fingerprint-auth": {}
     }
@@ -65,6 +64,7 @@
     "cordova-android-support-gradle-release": "1.2.0",
     "cordova-build-architecture": "https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.3",
     "cordova-plugin-actionsheet": "2.3.3",
+    "cordova-plugin-android-fingerprint-auth": "1.4.0",
     "cordova-plugin-android-permissions": "0.10.0",
     "cordova-plugin-app-version": "0.1.8",
     "cordova-plugin-battery-status": "1.1.2",
@@ -89,6 +89,7 @@
     "cordova-plugin-spinner": "1.1.0",
     "cordova-plugin-splashscreen": "4.1.0",
     "cordova-plugin-statusbar": "2.3.0",
+    "cordova-plugin-touch-id": "3.2.0",
     "cordova-plugin-vibration": "2.1.1",
     "cordova-plugin-whitelist": "1.2.2",
     "cordova-plugin-wkwebview-engine-nextgen": "^1.1.0",
@@ -97,8 +98,6 @@
     "cordova-sqlite-storage-pgb": "https://github.com/mendix/Cordova-sqlite-storage-pgb.git#storage-master",
     "phonegap-plugin-barcodescanner": "6.0.5",
     "phonegap-plugin-push": "1.5.3",
-    "uk.co.workingedge.phonegap.plugin.launchnavigator": "2.9.11",
-    "cordova-plugin-touch-id": "3.2.0",
-    "cordova-plugin-android-fingerprint-auth": "1.4.0"
+    "uk.co.workingedge.phonegap.plugin.launchnavigator": "2.9.11"
   }
 }

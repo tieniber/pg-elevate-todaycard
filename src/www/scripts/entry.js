@@ -6,17 +6,15 @@ MxApp.onConfigReady(function(config) {
 });
 
 MxApp.onClientReady(function(mx) {
-    // mx.session.loadSessionData = function() {
-
-    // };
     mx.session.logout = function() {
         return mx.session.sessionStore.remove()
             .then(function() {
                 return new Promise(function(resolve, reject) {
                     window.localStorage.setItem("mx-user-finger", "false");
                     window.localStorage.setItem("mx-user-pin", "false");
+                    window.localStorage.setItem("mx-user-token", "false");
                     console.log("killing session on the server");
-                    window.mx.data.action({
+                    mx.data.action({
                         params: {
                             actionname: "CustomAuthentication.KillSession",
                         },
@@ -32,6 +30,7 @@ MxApp.onClientReady(function(mx) {
                 });
             });
     };
+    window.localStorage.setItem("mx-user-token", !!0);
 });
 
 // Uncomment this function if you would like to control when app updates are performed

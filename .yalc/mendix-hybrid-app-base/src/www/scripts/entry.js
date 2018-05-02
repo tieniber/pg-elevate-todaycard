@@ -7,10 +7,11 @@ document.addEventListener("deviceready", function() {
     Settings.loadJSON("settings.json", function(response) {
         let settings = JSON.parse(response);
         var userPin = localStorage.getItem("mx-user-pin") === "true",
-            userFingerprint = localStorage.getItem("mx-user-finger") === "true";
+            userFingerprint = localStorage.getItem("mx-user-finger") === "true",
+            userToken = localStorage.getItem("mx-user-token") === "true";
 
         MxApp.initialize(settings.url, settings.enableOffline, settings.persistentSession.enabled,
-            settings.persistentSession.forceSecurity, userPin, userFingerprint, settings.username,
+            settings.persistentSession.forceSecurity, userPin, userFingerprint, userToken, settings.username,
             settings.password, settings.updateAsync);
     });
 });

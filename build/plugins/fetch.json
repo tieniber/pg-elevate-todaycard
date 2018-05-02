@@ -333,14 +333,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-privacyscreen": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-privacyscreen"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-touch-id": {
     "source": {
       "type": "registry",

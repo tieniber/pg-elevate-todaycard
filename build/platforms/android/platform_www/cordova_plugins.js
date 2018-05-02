@@ -729,7 +729,6 @@ module.exports.metadata =
   "com.crosswalk.cookies": "0.0.1",
   "cordova-android-support-gradle-release": "1.2.0",
   "cordova-android-play-services-gradle-release": "1.3.0",
-  "cordova-plugin-privacyscreen": "0.3.1",
   "cordova-plugin-touch-id": "3.2.0",
   "cordova-plugin-android-fingerprint-auth": "1.4.0"
 };

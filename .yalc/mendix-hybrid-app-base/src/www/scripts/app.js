@@ -733,7 +733,7 @@ module.exports = (function() {
     // MxApp.initialize(settings.url,
     //     settings.enableOffline, settings.persistentSession.enabled, settings.persistentSession.forceSecurity,
     //     userPin, userFingerprint, settings.username, settings.password, settings.updateAsync);
-    var initialize = async function(url, enableOffline, persistentSessionEnabled, persistentSessionForceSecurity, pin, finger, username, password, updateAsync) {
+    var initialize = async function(url, enableOffline, persistentSessionEnabled, persistentSessionForceSecurity, pin, finger, token, username, password, updateAsync) {
         enableOffline = !!enableOffline;
 
         // Make sure the url always ends with a /
@@ -798,7 +798,11 @@ module.exports = (function() {
 
         const syncAndStartup = async function() {
             const [config, resourcesUrl] = await synchronizeResources(appUrl, enableOffline, shouldDownloadFn, updateAsync);
-            await startup(config, resourcesUrl, appUrl, enableOffline, (persistentSessionEnabled && persistentSessionForceSecurity), (finger || pin));
+            // check here since the app may not have been re-initialized
+            const authProvided = (window.localStorage.getItem("mx-user-finger") === "true" ||
+                window.localStorage.getItem("mx-user-pin") === "true" ||
+                window.localStorage.getItem("mx-user-token") === "true");
+            await startup(config, resourcesUrl, appUrl, enableOffline, (persistentSessionEnabled && persistentSessionForceSecurity), authProvided);
         };
 
         const logout = function() {
@@ -819,7 +823,31 @@ module.exports = (function() {
                     }
                 } else {
                     console.info("Mx not loaded, so cannot log out");
-                    resolve();
+                    console.info("clearing fingerprint and pin flags...");
+                    window.localStorage.setItem("mx-user-finger", "false");
+                    window.localStorage.setItem("mx-user-pin", "false");
+                    console.info("cleared fingerprint and pin flags");
+                    console.info("clearing cookies...");
+                    var cookiePromise1 = new Promise(function(resolve1) {
+                        console.info("Will remove cookies");
+                        window.cookieEmperor.clearAll(resolve1, () => {
+                            console.info("Failed to clear cookies");
+                            resolve1();
+                        });
+                    });
+                    var cookiePromise2 = new Promise(function(resolve2) {
+                        if (cordova.platformId === "android") {
+                            console.info("Will remove Crosswalk cookies");
+                            window.cookies.clear(resolve2, () => {
+                                console.info("Failed to clear Crosswalk cookies");
+                                resolve2();
+                            });
+                        }
+                    })
+                    Promise.all([cookiePromise1, cookiePromise2]).then(function() {
+                        console.log("cookies cleared");
+                        resolve();
+                    });
                 }
             });
         };
@@ -889,7 +917,8 @@ module.exports = (function() {
                 await logout();
 
             }
-
+        } else if (token) {
+            console.log("found a token with no security. Attempting to log in");
         } else {
             // something? (default for now)
             console.log("no credentials, fingerprint, or pin provided. Logging out.")

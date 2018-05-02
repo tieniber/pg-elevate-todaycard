@@ -134,9 +134,6 @@
       "PLAY_SERVICES_VERSION": "12.+",
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
-    "cordova-plugin-privacyscreen": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
     "cordova-plugin-touch-id": {
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
