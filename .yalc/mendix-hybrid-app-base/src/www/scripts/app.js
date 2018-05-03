@@ -294,6 +294,30 @@ module.exports = (function() {
             };
             window.dojoConfig.mx.verifyPin = PinView.verify;
             window.dojoConfig.mx.verifyFinger = FingerprintView.verify;
+            window.dojoConfig.mx.clearCookies = function() {
+                return new Promise(function(resolve) {
+                    var cookiePromise1 = new Promise(function(resolve1) {
+                        console.info("Will remove cookies");
+                        window.cookieEmperor.clearAll(resolve1, () => {
+                            console.info("Failed to clear cookies");
+                            resolve1();
+                        });
+                    });
+                    var cookiePromise2 = new Promise(function(resolve2) {
+                        if (cordova.platformId === "android") {
+                            console.info("Will remove Crosswalk cookies");
+                            window.cookies.clear(resolve2, () => {
+                                console.info("Failed to clear Crosswalk cookies");
+                                resolve2();
+                            });
+                        }
+                    })
+                    Promise.all([cookiePromise1, cookiePromise2]).then(function() {
+                        console.log("cookies cleared");
+                        resolve();
+                    });
+                });
+            }
 
             if (cordova.platformId === "android") {
                 window.dojoConfig.ui.openUrlFn = function(url, fileName, windowName) {
