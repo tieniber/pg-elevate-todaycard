@@ -1,5 +1,5 @@
 {
-  "url": "http://10.104.105.95:8080",
+  "url": "http://10.104.108.244:8080",
   "enableOffline": false,
   "updateAsync": false,
   "persistentSession": {

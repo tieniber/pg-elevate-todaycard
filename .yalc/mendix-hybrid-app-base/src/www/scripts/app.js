@@ -294,6 +294,13 @@ module.exports = (function() {
             };
             window.dojoConfig.mx.verifyPin = PinView.verify;
             window.dojoConfig.mx.verifyFinger = FingerprintView.verify;
+            window.dojoConfig.mx.removeToken = function() {
+                return new Promise(function(resolve) {
+                    window.dojoConfig.session.tokenStore.remove(function() {
+                        resolve();
+                    })
+                });
+            }
             window.dojoConfig.mx.clearCookies = function() {
                 return new Promise(function(resolve) {
                     var cookiePromise1 = new Promise(function(resolve1) {
@@ -311,6 +318,7 @@ module.exports = (function() {
                                 resolve2();
                             });
                         }
+                        resolve2();
                     })
                     Promise.all([cookiePromise1, cookiePromise2]).then(function() {
                         console.log("cookies cleared");
@@ -867,6 +875,7 @@ module.exports = (function() {
                                 resolve2();
                             });
                         }
+                        resolve2();
                     })
                     Promise.all([cookiePromise1, cookiePromise2]).then(function() {
                         console.log("cookies cleared");
