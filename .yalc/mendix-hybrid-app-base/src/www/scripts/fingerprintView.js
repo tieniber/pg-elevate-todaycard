@@ -11,14 +11,14 @@ export function verify() {
     return new Promise((resolve, reject) => {
         if (device.platform === "iOS") {
             window.plugins.touchid.isAvailable(
-                function() {
+                function(type) {
+                    console.log("Biometrics type1:" + type);
                     window.plugins.touchid.verifyFingerprint(
                         'Scan your fingerprint please', // this will be shown in the native scanner popup
                         function(msg) {
                             resolve();
                         }, // success handler: fingerprint accepted
                         function(msg) {
-                            deleteToken();
                             reject(new Error("Fingerprint verification failed"));
                         } // error handler with errorcode and localised reason
                     );
@@ -85,6 +85,33 @@ export function verify() {
 
         function closeView() {
             if (callback) callback();
+        }
+    });
+}
+
+export function isBiometricsAvailable() {
+    return new Promise((resolve, reject) => {
+        if (device.platform === "iOS") {
+            window.plugins.touchid.isAvailable(
+                function(type) {
+                    console.log("Biometrics type2:" + type);
+                    resolve(type);
+                }, // success handler: TouchID available
+                function(msg) {
+                    resolve(null);
+                } // error handler: no TouchID available
+            );
+        } else if (device.platform === "Android") {
+            FingerprintAuth.isAvailable(
+                function(type) {
+                    console.log("Biometrics type2:" + type);
+                    resolve("touch");
+                }, // success handler: TouchID available
+                function(msg) {
+                    resolve(null);
+                } // error handler: no TouchID available
+
+            );
         }
     });
 }

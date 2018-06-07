@@ -64,5 +64,29 @@
         </div>
 
         <script src="cordova.js"></script>
+        <script>
+        var timerId;
+        document.addEventListener("pause", function() {
+            function timerFunc() {
+
+                if (localStorage.getItem("mx-dashboard") === "true") {
+                    console.log("Timer expired. logging out");
+                    localStorage.setItem("mx-session-timed-out", "true");
+                    localStorage.setItem("mx-user-finger", "false");
+                    localStorage.setItem("mx-user-pin", "false");
+                    localStorage.setItem("mx-user-token", "false");
+                    mx.session.logout();
+                    mx.reload();
+                }
+            }
+            timerId = setTimeout(timerFunc, 30 * 1000);
+
+        });
+
+        document.addEventListener("resume", function() {
+            console.log("Timer cleard on resume");
+            clearTimeout(timerId);
+        });
+    </script>
     <script type="text/javascript" src="../www/js/bundle.js"></script></body>
 </html>

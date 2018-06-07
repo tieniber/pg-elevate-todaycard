@@ -25,7 +25,7 @@ MxApp.onClientReady(function(mx) {
                         },
                         error: function(e) {
                             console.error(e);
-                            resolve();
+                            reject();
                         }
                     })
                 });

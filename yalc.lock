@@ -2,7 +2,7 @@
   "version": "v1",
   "packages": {
     "mendix-hybrid-app-base": {
-      "signature": "57e69343b4c34dc0c7885fd6f1e26919",
+      "signature": "3c678213df7e4988a6345861c400fdc3",
       "file": true,
       "replaced": "^2.0.0"
     }
