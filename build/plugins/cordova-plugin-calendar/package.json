@@ -1,37 +1,7 @@
 {
-  "_from": "cordova-plugin-calendar@4.5.5",
-  "_id": "cordova-plugin-calendar@4.5.5",
-  "_inBundle": false,
-  "_integrity": "sha1-AsSICFn5Y6cf3Cg/ONgQosq9vPg=",
-  "_location": "/cordova-plugin-calendar",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "cordova-plugin-calendar@4.5.5",
-    "name": "cordova-plugin-calendar",
-    "escapedName": "cordova-plugin-calendar",
-    "rawSpec": "4.5.5",
-    "saveSpec": null,
-    "fetchSpec": "4.5.5"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-calendar/-/cordova-plugin-calendar-4.5.5.tgz",
-  "_shasum": "02c4880859f963a71fdc283f38d810a2cabdbcf8",
-  "_spec": "cordova-plugin-calendar@4.5.5",
-  "_where": "/Users/Conner/Documents/Mendix/_Customers/Elevate/TodayCard/phonegap/build",
-  "author": {
-    "name": "Eddy Verbruggen",
-    "email": "eddyverbruggen@gmail.com",
-    "url": "https://github.com/EddyVerbruggen"
-  },
-  "bugs": {
-    "url": "https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin/issues"
-  },
-  "bundleDependencies": false,
+  "name": "cordova-plugin-calendar",
+  "version": "4.5.5",
+  "description": "This plugin allows you to manipulate the native calendar.",
   "cordova": {
     "id": "cordova-plugin-calendar",
     "platforms": [
@@ -39,15 +9,10 @@
       "android"
     ]
   },
-  "deprecated": false,
-  "description": "This plugin allows you to manipulate the native calendar.",
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.0.0"
-    }
-  ],
-  "homepage": "https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git"
+  },
   "keywords": [
     "Calendar",
     "Agenda",
@@ -56,11 +21,16 @@
     "cordova-ios",
     "cordova-android"
   ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Eddy Verbruggen <eddyverbruggen@gmail.com> (https://github.com/EddyVerbruggen)",
   "license": "MIT",
-  "name": "cordova-plugin-calendar",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git"
+  "bugs": {
+    "url": "https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin/issues"
   },
-  "version": "4.5.5"
+  "homepage": "https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#readme"
 }

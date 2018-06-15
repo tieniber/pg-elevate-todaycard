@@ -1,35 +1,8 @@
 {
-  "_from": "cordova-plugin-contacts@2.3.0",
-  "_id": "cordova-plugin-contacts@2.3.0",
-  "_inBundle": false,
-  "_integrity": "sha1-UplVCZqiAmzUIa73ucJFRfmHz7M=",
-  "_location": "/cordova-plugin-contacts",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "cordova-plugin-contacts@2.3.0",
-    "name": "cordova-plugin-contacts",
-    "escapedName": "cordova-plugin-contacts",
-    "rawSpec": "2.3.0",
-    "saveSpec": null,
-    "fetchSpec": "2.3.0"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-contacts/-/cordova-plugin-contacts-2.3.0.tgz",
-  "_shasum": "529955099aa2026cd421aef7b9c24545f987cfb3",
-  "_spec": "cordova-plugin-contacts@2.3.0",
-  "_where": "/Users/Conner/Documents/Mendix/_Customers/Elevate/TodayCard/phonegap/build",
-  "author": {
-    "name": "Apache Software Foundation"
-  },
-  "bugs": {
-    "url": "https://github.com/apache/cordova-plugin-contacts/issues"
-  },
-  "bundleDependencies": false,
+  "name": "cordova-plugin-contacts",
+  "version": "2.3.0",
+  "description": "Cordova Contacts Plugin",
+  "types": "./types/index.d.ts",
   "cordova": {
     "id": "cordova-plugin-contacts",
     "platforms": [
@@ -44,19 +17,10 @@
       "windows"
     ]
   },
-  "deprecated": false,
-  "description": "Cordova Contacts Plugin",
-  "devDependencies": {
-    "jshint": "^2.6.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apache/cordova-plugin-contacts"
   },
-  "engines": {
-    "cordovaDependencies": {
-      "3.0.0": {
-        "cordova": ">100"
-      }
-    }
-  },
-  "homepage": "https://github.com/apache/cordova-plugin-contacts#readme",
   "keywords": [
     "cordova",
     "contacts",
@@ -72,16 +36,20 @@
     "cordova-windows8",
     "cordova-windows"
   ],
-  "license": "Apache-2.0",
-  "name": "cordova-plugin-contacts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/apache/cordova-plugin-contacts.git"
-  },
   "scripts": {
-    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
-    "test": "npm run jshint"
+    "test": "npm run jshint",
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests"
   },
-  "types": "./types/index.d.ts",
-  "version": "2.3.0"
+  "author": "Apache Software Foundation",
+  "license": "Apache-2.0",
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  }
 }

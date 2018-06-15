@@ -1,35 +1,7 @@
 {
-  "_from": "cordova-plugin-inappbrowser@1.4.0",
-  "_id": "cordova-plugin-inappbrowser@1.4.0",
-  "_inBundle": false,
-  "_integrity": "sha1-sDH2jjwiT/FXdKGHEelig3El3Oc=",
-  "_location": "/cordova-plugin-inappbrowser",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "cordova-plugin-inappbrowser@1.4.0",
-    "name": "cordova-plugin-inappbrowser",
-    "escapedName": "cordova-plugin-inappbrowser",
-    "rawSpec": "1.4.0",
-    "saveSpec": null,
-    "fetchSpec": "1.4.0"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-inappbrowser/-/cordova-plugin-inappbrowser-1.4.0.tgz",
-  "_shasum": "b031f68e3c224ff15774a18711e962837125dce7",
-  "_spec": "cordova-plugin-inappbrowser@1.4.0",
-  "_where": "/Users/Conner/Documents/Mendix/_Customers/Elevate/TodayCard/phonegap/build",
-  "author": {
-    "name": "Apache Software Foundation"
-  },
-  "bugs": {
-    "url": "https://github.com/apache/cordova-plugin-inappbrowser/issues"
-  },
-  "bundleDependencies": false,
+  "name": "cordova-plugin-inappbrowser",
+  "version": "1.4.0",
+  "description": "Cordova InAppBrowser Plugin",
   "cordova": {
     "id": "cordova-plugin-inappbrowser",
     "platforms": [
@@ -44,18 +16,10 @@
       "firefoxos"
     ]
   },
-  "deprecated": false,
-  "description": "Cordova InAppBrowser Plugin",
-  "devDependencies": {
-    "jshint": "^2.6.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apache/cordova-plugin-inappbrowser"
   },
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.1.0"
-    }
-  ],
-  "homepage": "https://github.com/apache/cordova-plugin-inappbrowser#readme",
   "keywords": [
     "cordova",
     "in",
@@ -73,15 +37,19 @@
     "cordova-windows",
     "cordova-firefoxos"
   ],
-  "license": "Apache-2.0",
-  "name": "cordova-plugin-inappbrowser",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/apache/cordova-plugin-inappbrowser.git"
-  },
   "scripts": {
-    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
-    "test": "npm run jshint"
+    "test": "npm run jshint",
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests"
   },
-  "version": "1.4.0"
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.1.0"
+    }
+  ],
+  "author": "Apache Software Foundation",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  }
 }

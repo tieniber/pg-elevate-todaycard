@@ -1,41 +1,26 @@
 {
-  "_from": "cordova-plugin-crosswalk-webview@2.3.0",
-  "_id": "cordova-plugin-crosswalk-webview@2.3.0",
-  "_inBundle": false,
-  "_integrity": "sha1-4u407P2t3YS9qE5yZjU55AyZ0yQ=",
-  "_location": "/cordova-plugin-crosswalk-webview",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "cordova-plugin-crosswalk-webview@2.3.0",
-    "name": "cordova-plugin-crosswalk-webview",
-    "escapedName": "cordova-plugin-crosswalk-webview",
-    "rawSpec": "2.3.0",
-    "saveSpec": null,
-    "fetchSpec": "2.3.0"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-crosswalk-webview/-/cordova-plugin-crosswalk-webview-2.3.0.tgz",
-  "_shasum": "e2ee34ecfdaddd84bda84e72663539e40c99d324",
-  "_spec": "cordova-plugin-crosswalk-webview@2.3.0",
-  "_where": "/Users/Conner/Documents/Mendix/_Customers/Elevate/TodayCard/phonegap/build",
-  "author": "",
-  "bugs": {
-    "url": "https://crosswalk-project.org/jira"
-  },
-  "bundleDependencies": false,
+  "name": "cordova-plugin-crosswalk-webview",
+  "version": "2.3.0",
+  "description": "Changes the default WebView to CrossWalk",
   "cordova": {
     "id": "cordova-plugin-crosswalk-webview",
     "platforms": [
       "android"
     ]
   },
-  "deprecated": false,
-  "description": "Changes the default WebView to CrossWalk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview.git"
+  },
+  "keywords": [
+    "cordova",
+    "chromium",
+    "crosswalk",
+    "webview",
+    "engine",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
   "engines": {
     "cordovaDependencies": {
       "2.0.0": {
@@ -55,21 +40,10 @@
       }
     }
   },
-  "homepage": "https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview",
-  "keywords": [
-    "cordova",
-    "chromium",
-    "crosswalk",
-    "webview",
-    "engine",
-    "ecosystem:cordova",
-    "cordova-android"
-  ],
+  "author": "",
   "license": "Apache 2.0",
-  "name": "cordova-plugin-crosswalk-webview",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview.git"
+  "bugs": {
+    "url": "https://crosswalk-project.org/jira"
   },
-  "version": "2.3.0"
+  "homepage": "https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview"
 }

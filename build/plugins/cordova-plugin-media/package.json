@@ -1,35 +1,7 @@
 {
-  "_from": "cordova-plugin-media@2.3.0",
-  "_id": "cordova-plugin-media@2.3.0",
-  "_inBundle": false,
-  "_integrity": "sha1-D6dyRKWwLWA2uNHygZjE8ma6egc=",
-  "_location": "/cordova-plugin-media",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "cordova-plugin-media@2.3.0",
-    "name": "cordova-plugin-media",
-    "escapedName": "cordova-plugin-media",
-    "rawSpec": "2.3.0",
-    "saveSpec": null,
-    "fetchSpec": "2.3.0"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-media/-/cordova-plugin-media-2.3.0.tgz",
-  "_shasum": "0fa77244a5b02d6036b8d1f28198c4f266ba7a07",
-  "_spec": "cordova-plugin-media@2.3.0",
-  "_where": "/Users/Conner/Documents/Mendix/_Customers/Elevate/TodayCard/phonegap/build",
-  "author": {
-    "name": "Apache Software Foundation"
-  },
-  "bugs": {
-    "url": "https://github.com/apache/cordova-plugin-media/issues"
-  },
-  "bundleDependencies": false,
+  "name": "cordova-plugin-media",
+  "version": "2.3.0",
+  "description": "Cordova Media Plugin",
   "cordova": {
     "id": "cordova-plugin-media",
     "platforms": [
@@ -45,12 +17,10 @@
       "tizen"
     ]
   },
-  "deprecated": false,
-  "description": "Cordova Media Plugin",
-  "devDependencies": {
-    "jshint": "^2.6.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apache/cordova-plugin-media"
   },
-  "homepage": "https://github.com/apache/cordova-plugin-media#readme",
   "keywords": [
     "cordova",
     "media",
@@ -66,18 +36,16 @@
     "cordova-windows",
     "cordova-tizen"
   ],
-  "license": "Apache-2.0",
-  "name": "cordova-plugin-media",
+  "scripts": {
+    "test": "npm run jshint",
+    "jshint": "jshint www && jshint src && jshint tests"
+  },
   "peerDependencies": {
     "cordova-plugin-file": "^4.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/apache/cordova-plugin-media.git"
-  },
-  "scripts": {
-    "jshint": "jshint www && jshint src && jshint tests",
-    "test": "npm run jshint"
-  },
-  "version": "2.3.0"
+  "author": "Apache Software Foundation",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  }
 }

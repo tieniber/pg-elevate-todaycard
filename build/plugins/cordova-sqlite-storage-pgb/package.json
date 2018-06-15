@@ -1,31 +1,7 @@
 {
-  "_from": "git+https://github.com/mendix/Cordova-sqlite-storage-pgb.git#storage-master",
-  "_id": "cordova-sqlite-storage-pgb@2.0.4",
-  "_inBundle": false,
-  "_location": "/cordova-sqlite-storage-pgb",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "git",
-    "raw": "https://github.com/mendix/Cordova-sqlite-storage-pgb.git#storage-master",
-    "rawSpec": "https://github.com/mendix/Cordova-sqlite-storage-pgb.git#storage-master",
-    "saveSpec": "git+https://github.com/mendix/Cordova-sqlite-storage-pgb.git#storage-master",
-    "fetchSpec": "https://github.com/mendix/Cordova-sqlite-storage-pgb.git",
-    "gitCommittish": "storage-master"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "git+https://github.com/mendix/Cordova-sqlite-storage-pgb.git#3b8772295747e6b072cd93873e632eb50595c2a8",
-  "_spec": "https://github.com/mendix/Cordova-sqlite-storage-pgb.git#storage-master",
-  "_where": "/Users/Conner/Documents/Mendix/_Customers/Elevate/TodayCard/phonegap/build",
-  "author": {
-    "name": "various"
-  },
-  "bugs": {
-    "url": "https://github.com/mendix/Cordova-sqlite-storage-pgb/issues"
-  },
-  "bundleDependencies": false,
+  "name": "cordova-sqlite-storage-pgb",
+  "version": "2.0.4",
+  "description": "Native interface to SQLite for PhoneGap/Cordova (Phonegap Build compatible)",
   "cordova": {
     "id": "cordova-sqlite-storage-pgb",
     "platforms": [
@@ -34,12 +10,10 @@
       "windows"
     ]
   },
-  "deprecated": false,
-  "description": "Native interface to SQLite for PhoneGap/Cordova (Phonegap Build compatible)",
-  "devDependencies": {
-    "shelljs": "^0.7.4"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mendix/Cordova-sqlite-storage-pgb.git"
   },
-  "homepage": "https://github.com/mendix/Cordova-sqlite-storage-pgb",
   "keywords": [
     "sqlite",
     "ecosystem:cordova",
@@ -48,14 +22,16 @@
     "cordova-windows",
     "phonegap-build"
   ],
+  "author": "various",
   "license": "MIT",
-  "name": "cordova-sqlite-storage-pgb",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mendix/Cordova-sqlite-storage-pgb.git"
+  "bugs": {
+    "url": "https://github.com/mendix/Cordova-sqlite-storage-pgb/issues"
   },
+  "homepage": "https://github.com/mendix/Cordova-sqlite-storage-pgb",
   "scripts": {
     "start": "node scripts/prepareSpec.js"
   },
-  "version": "2.0.4"
+  "devDependencies": {
+    "shelljs": "^0.7.4"
+  }
 }

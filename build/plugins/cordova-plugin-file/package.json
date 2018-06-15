@@ -1,35 +1,7 @@
 {
-  "_from": "cordova-plugin-file@4.2.0",
-  "_id": "cordova-plugin-file@4.2.0",
-  "_inBundle": false,
-  "_integrity": "sha1-305FsUTjXc/ve0rpUM2pbqjumxo=",
-  "_location": "/cordova-plugin-file",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "cordova-plugin-file@4.2.0",
-    "name": "cordova-plugin-file",
-    "escapedName": "cordova-plugin-file",
-    "rawSpec": "4.2.0",
-    "saveSpec": null,
-    "fetchSpec": "4.2.0"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-file/-/cordova-plugin-file-4.2.0.tgz",
-  "_shasum": "df4e45b144e35dcfef7b4ae950cda96ea8ee9b1a",
-  "_spec": "cordova-plugin-file@4.2.0",
-  "_where": "/Users/Conner/Documents/Mendix/_Customers/Elevate/TodayCard/phonegap/build",
-  "author": {
-    "name": "Apache Software Foundation"
-  },
-  "bugs": {
-    "url": "https://github.com/apache/cordova-plugin-file/issues"
-  },
-  "bundleDependencies": false,
+  "name": "cordova-plugin-file",
+  "version": "4.2.0",
+  "description": "Cordova File Plugin",
   "cordova": {
     "id": "cordova-plugin-file",
     "platforms": [
@@ -46,12 +18,10 @@
       "firefoxos"
     ]
   },
-  "deprecated": false,
-  "description": "Cordova File Plugin",
-  "devDependencies": {
-    "jshint": "^2.6.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apache/cordova-plugin-file"
   },
-  "homepage": "https://github.com/apache/cordova-plugin-file#readme",
   "keywords": [
     "cordova",
     "file",
@@ -68,15 +38,13 @@
     "cordova-windows",
     "cordova-firefoxos"
   ],
-  "license": "Apache-2.0",
-  "name": "cordova-plugin-file",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/apache/cordova-plugin-file.git"
-  },
   "scripts": {
-    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
-    "test": "npm run jshint"
+    "test": "npm run jshint",
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests"
   },
-  "version": "4.2.0"
+  "author": "Apache Software Foundation",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  }
 }

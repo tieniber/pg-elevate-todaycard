@@ -1,35 +1,7 @@
 {
-  "_from": "cordova-plugin-actionsheet@2.3.3",
-  "_id": "cordova-plugin-actionsheet@2.3.3",
-  "_inBundle": false,
-  "_integrity": "sha1-6SYbLQBKjaQHOI1g31NMFWxS/xE=",
-  "_location": "/cordova-plugin-actionsheet",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "cordova-plugin-actionsheet@2.3.3",
-    "name": "cordova-plugin-actionsheet",
-    "escapedName": "cordova-plugin-actionsheet",
-    "rawSpec": "2.3.3",
-    "saveSpec": null,
-    "fetchSpec": "2.3.3"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-actionsheet/-/cordova-plugin-actionsheet-2.3.3.tgz",
-  "_shasum": "e9261b2d004a8da407388d60df534c156c52ff11",
-  "_spec": "cordova-plugin-actionsheet@2.3.3",
-  "_where": "/Users/Conner/Documents/Mendix/_Customers/Elevate/TodayCard/phonegap/build",
-  "author": {
-    "name": "Eddy Verbruggen - @EddyVerbruggen"
-  },
-  "bugs": {
-    "url": "https://github.com/EddyVerbruggen/cordova-plugin-actionsheet/issues"
-  },
-  "bundleDependencies": false,
+  "name": "cordova-plugin-actionsheet",
+  "version": "2.3.3",
+  "description": "Show a sheet of options the user can choose from.",
   "cordova": {
     "id": "cordova-plugin-actionsheet",
     "platforms": [
@@ -38,15 +10,10 @@
       "wp8"
     ]
   },
-  "deprecated": false,
-  "description": "Show a sheet of options the user can choose from.",
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.0.0"
-    }
-  ],
-  "homepage": "https://github.com/EddyVerbruggen/cordova-plugin-actionsheet#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddyVerbruggen/cordova-plugin-actionsheet.git"
+  },
   "keywords": [
     "ActionSheet",
     "UIActionSheet",
@@ -61,11 +28,16 @@
     "cordova-android",
     "cordova-wp8"
   ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Eddy Verbruggen - @EddyVerbruggen",
   "license": "MIT",
-  "name": "cordova-plugin-actionsheet",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EddyVerbruggen/cordova-plugin-actionsheet.git"
+  "bugs": {
+    "url": "https://github.com/EddyVerbruggen/cordova-plugin-actionsheet/issues"
   },
-  "version": "2.3.3"
+  "homepage": "https://github.com/EddyVerbruggen/cordova-plugin-actionsheet#readme"
 }

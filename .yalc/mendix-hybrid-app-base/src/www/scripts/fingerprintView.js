@@ -11,19 +11,20 @@ export function verify() {
     return new Promise((resolve, reject) => {
         if (device.platform === "iOS") {
             window.plugins.touchid.isAvailable(
-                function(type) {
+                function (type) {
                     console.log("Biometrics type1:" + type);
                     window.plugins.touchid.verifyFingerprint(
                         'Scan your fingerprint please', // this will be shown in the native scanner popup
-                        function(msg) {
+                        function (msg) {
                             resolve();
                         }, // success handler: fingerprint accepted
-                        function(msg) {
+                        function (msg) {
+                            deleteToken();
                             reject(new Error("Fingerprint verification failed"));
                         } // error handler with errorcode and localised reason
                     );
                 }, // success handler: TouchID available
-                function(msg) {
+                function (msg) {
                     deleteToken();
                     reject(new Error("No Touch ID available"));
                 } // error handler: no TouchID available
@@ -93,25 +94,26 @@ export function isBiometricsAvailable() {
     return new Promise((resolve, reject) => {
         if (device.platform === "iOS") {
             window.plugins.touchid.isAvailable(
-                function(type) {
+                function (type) {
                     console.log("Biometrics type2:" + type);
                     resolve(type);
                 }, // success handler: TouchID available
-                function(msg) {
+                function (msg) {
                     resolve(null);
                 } // error handler: no TouchID available
             );
         } else if (device.platform === "Android") {
             FingerprintAuth.isAvailable(
-                function(type) {
+                function (type) {
                     console.log("Biometrics type2:" + type);
                     resolve("touch");
                 }, // success handler: TouchID available
-                function(msg) {
+                function (msg) {
                     resolve(null);
                 } // error handler: no TouchID available
 
             );
         }
-    });
+    })
+
 }

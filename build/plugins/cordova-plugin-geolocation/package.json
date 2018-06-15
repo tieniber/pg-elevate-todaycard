@@ -1,35 +1,7 @@
 {
-  "_from": "cordova-plugin-geolocation@2.2.0",
-  "_id": "cordova-plugin-geolocation@2.2.0",
-  "_inBundle": false,
-  "_integrity": "sha1-xdZGaowSEIIY1JLSD38QksxFxVE=",
-  "_location": "/cordova-plugin-geolocation",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "cordova-plugin-geolocation@2.2.0",
-    "name": "cordova-plugin-geolocation",
-    "escapedName": "cordova-plugin-geolocation",
-    "rawSpec": "2.2.0",
-    "saveSpec": null,
-    "fetchSpec": "2.2.0"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-geolocation/-/cordova-plugin-geolocation-2.2.0.tgz",
-  "_shasum": "c5d6466a8c12108218d492d20f7f1092cc45c551",
-  "_spec": "cordova-plugin-geolocation@2.2.0",
-  "_where": "/Users/Conner/Documents/Mendix/_Customers/Elevate/TodayCard/phonegap/build",
-  "author": {
-    "name": "Apache Software Foundation"
-  },
-  "bugs": {
-    "url": "https://github.com/apache/cordova-plugin-geolocation/issues"
-  },
-  "bundleDependencies": false,
+  "name": "cordova-plugin-geolocation",
+  "version": "2.2.0",
+  "description": "Cordova Geolocation Plugin",
   "cordova": {
     "id": "cordova-plugin-geolocation",
     "platforms": [
@@ -45,12 +17,10 @@
       "firefoxos"
     ]
   },
-  "deprecated": false,
-  "description": "Cordova Geolocation Plugin",
-  "devDependencies": {
-    "jshint": "^2.6.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apache/cordova-plugin-geolocation"
   },
-  "homepage": "https://github.com/apache/cordova-plugin-geolocation#readme",
   "keywords": [
     "cordova",
     "geolocation",
@@ -66,15 +36,13 @@
     "cordova-windows",
     "cordova-firefoxos"
   ],
-  "license": "Apache-2.0",
-  "name": "cordova-plugin-geolocation",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/apache/cordova-plugin-geolocation.git"
-  },
   "scripts": {
-    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
-    "test": "npm run jshint"
+    "test": "npm run jshint",
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests"
   },
-  "version": "2.2.0"
+  "author": "Apache Software Foundation",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  }
 }

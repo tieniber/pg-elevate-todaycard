@@ -17,7 +17,7 @@
     "local": {
         "name": "TodayCardLocal",
         "identifier": "com.mendixcloud.todaycard",
-        "url": "http://10.104.107.121:8080"
+        "url": "http://192.168.0.104:8080"
     },
     "home": {
         "name": "TodayCardLocal",
