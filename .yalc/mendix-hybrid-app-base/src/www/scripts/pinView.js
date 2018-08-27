@@ -111,6 +111,7 @@ export function confirm(pinToConfirm, callback, error) {
                 if (callback) callback();
             });
         } else {
+            // removeSelf();
             updateErrorText("Did not match");
 
             if (error) error(new Error(__("PIN did not match")));

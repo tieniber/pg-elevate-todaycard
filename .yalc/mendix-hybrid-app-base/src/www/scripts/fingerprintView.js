@@ -11,8 +11,7 @@ export function verify() {
     return new Promise((resolve, reject) => {
         if (device.platform === "iOS") {
             window.plugins.touchid.isAvailable(
-                function (type) {
-                    console.log("Biometrics type1:" + type);
+                function () {
                     window.plugins.touchid.verifyFingerprint(
                         'Scan your fingerprint please', // this will be shown in the native scanner popup
                         function (msg) {
@@ -25,7 +24,7 @@ export function verify() {
                     );
                 }, // success handler: TouchID available
                 function (msg) {
-                    deleteToken();
+                    // deleteToken(); 
                     reject(new Error("No Touch ID available"));
                 } // error handler: no TouchID available
             );
@@ -88,8 +87,8 @@ export function verify() {
             if (callback) callback();
         }
     });
-}
 
+}
 export function isBiometricsAvailable() {
     return new Promise((resolve, reject) => {
         if (device.platform === "iOS") {
@@ -111,9 +110,7 @@ export function isBiometricsAvailable() {
                 function (msg) {
                     resolve(null);
                 } // error handler: no TouchID available
-
             );
         }
     })
-
 }
