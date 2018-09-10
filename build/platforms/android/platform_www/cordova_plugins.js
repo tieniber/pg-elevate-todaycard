@@ -731,7 +731,7 @@ module.exports.metadata =
     "phonegap-plugin-push": "1.5.3",
     "uk.co.workingedge.phonegap.plugin.launchnavigator": "2.9.11",
     "cordova-android-support-gradle-release": "1.2.0",
-    "cordova-android-play-services-gradle-release": "1.4.2"
+    "cordova-android-play-services-gradle-release": "1.4.3"
 };
 // BOTTOM OF METADATA
 });

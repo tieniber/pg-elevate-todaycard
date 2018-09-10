@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.mendixcloud.todaycard"
+        id        = "com.mendixcloud.todaycardtest"
         version   = "1.0.0" >
 
-    <name>TodayCardLocal</name>
+    <name>TodayCardtest</name>
 
     <description>Look at My App!</description>
 
@@ -206,10 +206,11 @@
     <plugin name="cordova-plugin-touch-id" source="npm" version="3.2.0"/>
 <plugin name="cordova-plugin-android-fingerprint-auth" source="npm" version="1.4.0"/>
 
-    <plugin name="cordova-android-support-gradle-release" spec="1.2.0">
-        <variable name="ANDROID_SUPPORT_VERSION" value="27.0.0" />
-    </plugin>
-    <plugin name="cordova-android-play-services-gradle-release" spec="^1.3.0">
-        <variable name="PLAY_SERVICES_VERSION" value="12.+" />
-    </plugin>
+    <!-- config.xml.snippet -->
+<plugin name="cordova-android-support-gradle-release" spec="1.2.0">
+    <variable name="ANDROID_SUPPORT_VERSION" value="23.+" />
+</plugin>
+<plugin name="cordova-android-play-services-gradle-release" spec="^1.3.0">
+    <variable name="PLAY_SERVICES_VERSION" value="12.+" />
+</plugin>
 </widget>

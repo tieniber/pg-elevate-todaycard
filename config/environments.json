@@ -1,7 +1,7 @@
 {
     "test": {
-        "name": "TodayCard",
-        "identifier": "com.mendixcloud.todaycard",
+        "name": "TodayCardtest",
+        "identifier": "com.mendixcloud.todaycardtest",
         "url": "https://todaycard-test.mendixcloud.com"
     },
     "acceptance": {
