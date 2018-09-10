@@ -1,17 +1,44 @@
 {
-  "name": "cordova-plugin-android-fingerprint-auth",
-  "version": "1.4.0",
-  "description": "Cordova plugin to use Android fingerprint authentication API",
+  "_from": "cordova-plugin-android-fingerprint-auth@1.4.0",
+  "_id": "cordova-plugin-android-fingerprint-auth@1.4.0",
+  "_inBundle": false,
+  "_integrity": "sha1-MSYv60t57ZqSTOBD+nc1eNWI+4Y=",
+  "_location": "/cordova-plugin-android-fingerprint-auth",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-android-fingerprint-auth@1.4.0",
+    "name": "cordova-plugin-android-fingerprint-auth",
+    "escapedName": "cordova-plugin-android-fingerprint-auth",
+    "rawSpec": "1.4.0",
+    "saveSpec": null,
+    "fetchSpec": "1.4.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-android-fingerprint-auth/-/cordova-plugin-android-fingerprint-auth-1.4.0.tgz",
+  "_shasum": "31262feb4b79ed9a924ce043fa773578d588fb86",
+  "_spec": "cordova-plugin-android-fingerprint-auth@1.4.0",
+  "_where": "/Users/conner/mendix/pg/pg-elevate-todaycard/build",
+  "author": {
+    "name": "Matthew Wheatley"
+  },
+  "bugs": {
+    "url": "https://github.com/mjwheatley/cordova-plugin-android-fingerprint-auth/issues"
+  },
+  "bundleDependencies": false,
   "cordova": {
     "id": "cordova-plugin-android-fingerprint-auth",
     "platforms": [
       "android"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mjwheatley/cordova-plugin-android-fingerprint-auth.git"
-  },
+  "deprecated": false,
+  "description": "Cordova plugin to use Android fingerprint authentication API",
+  "homepage": "https://github.com/mjwheatley/cordova-plugin-android-fingerprint-auth#readme",
   "keywords": [
     "cordova",
     "plugin",
@@ -21,10 +48,11 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "Matthew Wheatley",
   "license": "Apache 2.0",
-  "bugs": {
-    "url": "https://github.com/mjwheatley/cordova-plugin-android-fingerprint-auth/issues"
+  "name": "cordova-plugin-android-fingerprint-auth",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjwheatley/cordova-plugin-android-fingerprint-auth.git"
   },
-  "homepage": "https://github.com/mjwheatley/cordova-plugin-android-fingerprint-auth#readme"
+  "version": "1.4.0"
 }

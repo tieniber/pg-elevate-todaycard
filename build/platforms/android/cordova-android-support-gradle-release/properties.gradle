@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 ext {ANDROID_SUPPORT_VERSION = "23.+"}
-=======
-ext {ANDROID_SUPPORT_VERSION = "27.+"}
->>>>>>> b68100bc5564c7511eb485f5736ef18ddf4ab565

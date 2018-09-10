@@ -1,28 +1,28 @@
 {
-  "_from": "cordova-android-support-gradle-release",
-  "_id": "cordova-android-support-gradle-release@1.4.4",
+  "_from": "cordova-android-support-gradle-release@1.2.0",
+  "_id": "cordova-android-support-gradle-release@1.2.0",
   "_inBundle": false,
-  "_integrity": "sha512-DOwZ+MX0CBoagXV6cHqfQacVjsrDea8z2wuM427AIvi2eAFvojw85o1XMCdJ4kSDMbsUUaNPw12h7uY0m+rcvg==",
+  "_integrity": "sha1-DHvAq5IHuJdC3YXkgQ4Ie2FCYTU=",
   "_location": "/cordova-android-support-gradle-release",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "cordova-android-support-gradle-release",
+    "raw": "cordova-android-support-gradle-release@1.2.0",
     "name": "cordova-android-support-gradle-release",
     "escapedName": "cordova-android-support-gradle-release",
-    "rawSpec": "",
+    "rawSpec": "1.2.0",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "1.2.0"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-android-support-gradle-release/-/cordova-android-support-gradle-release-1.4.4.tgz",
-  "_shasum": "6a64db69f36c332727d95b421d53c25dfe99684d",
-  "_spec": "cordova-android-support-gradle-release",
-  "_where": "/Users/conner/mendix/w/pg-elevate-todaycard/build",
+  "_resolved": "https://registry.npmjs.org/cordova-android-support-gradle-release/-/cordova-android-support-gradle-release-1.2.0.tgz",
+  "_shasum": "0c7bc0ab9207b89742dd85e4810e087b61426135",
+  "_spec": "cordova-android-support-gradle-release@1.2.0",
+  "_where": "/Users/conner/mendix/pg/pg-elevate-todaycard/build",
   "author": {
     "name": "Dave Alden"
   },
@@ -35,5 +35,5 @@
   "devDependencies": {},
   "license": "MIT",
   "name": "cordova-android-support-gradle-release",
-  "version": "1.4.4"
+  "version": "1.2.0"
 }

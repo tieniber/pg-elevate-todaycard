@@ -1,7 +1,32 @@
 {
-  "name": "cordova-plugin-cookieemperor",
-  "version": "1.0.0",
-  "description": "Cordova webkit browser cookie manipulation, XWalk solution",
+  "_from": "git+https://github.com/rtk/cordova-cookie-emperor.git",
+  "_id": "cordova-plugin-cookieemperor@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-cookieemperor",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/rtk/cordova-cookie-emperor.git",
+    "rawSpec": "https://github.com/rtk/cordova-cookie-emperor.git",
+    "saveSpec": "git+https://github.com/rtk/cordova-cookie-emperor.git",
+    "fetchSpec": "https://github.com/rtk/cordova-cookie-emperor.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/rtk/cordova-cookie-emperor.git#3a73cfddce512e1a3ad8742163b92de72a0e338a",
+  "_spec": "https://github.com/rtk/cordova-cookie-emperor.git",
+  "_where": "/Users/conner/mendix/pg/pg-elevate-todaycard/build",
+  "author": {
+    "name": "Rouven Kruse"
+  },
+  "bugs": {
+    "url": "https://github.com/RTK/cordova-cookie-emperor/issues"
+  },
+  "bundleDependencies": false,
   "cordova": {
     "id": "cordova-plugin-cookieemperor",
     "platforms": [
@@ -9,10 +34,9 @@
       "ios"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/RTK/cordova-cookie-emperor"
-  },
+  "deprecated": false,
+  "description": "Cordova webkit browser cookie manipulation, XWalk solution",
+  "homepage": "https://github.com/RTK/cordova-cookie-emperor#readme",
   "keywords": [
     "cordova",
     "cookies",
@@ -21,6 +45,11 @@
     "ecosystem:cordova",
     "cordova-ios"
   ],
-  "author": "Rouven Kruse",
-  "license": "MIT"
+  "license": "MIT",
+  "name": "cordova-plugin-cookieemperor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RTK/cordova-cookie-emperor.git"
+  },
+  "version": "1.0.0"
 }

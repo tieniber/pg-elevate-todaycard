@@ -7,26 +7,16 @@
     "files": {}
   },
   "installed_plugins": {
-    "com.crosswalk.cookies": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
     "com.darktalker.cordova.screenshot": {
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
     "com.telerik.plugins.nativepagetransitions": {
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
-    "cordova-android-play-services-gradle-release": {
-      "PLAY_SERVICES_VERSION": "12.+",
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
     "cordova-build-architecture": {
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
     "cordova-plugin-actionsheet": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
-    "cordova-plugin-android-fingerprint-auth": {
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
     "cordova-plugin-android-permissions": {
@@ -38,24 +28,7 @@
     "cordova-plugin-battery-status": {
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
-    "cordova-plugin-calendar": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
-    "cordova-plugin-contacts": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
     "cordova-plugin-cookieemperor": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
-    "cordova-plugin-crosswalk-webview": {
-      "XWALK_VERSION": "23+",
-      "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
-      "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
-      "XWALK_MODE": "embedded",
-      "XWALK_MULTIPLEAPK": "true",
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
     "cordova-plugin-device": {
@@ -76,19 +49,10 @@
     "cordova-plugin-file-transfer": {
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
-    "cordova-plugin-geolocation": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
     "cordova-plugin-globalization": {
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
     "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
-    "cordova-plugin-media": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
-    "cordova-plugin-media-capture": {
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
     "cordova-plugin-network-information": {
@@ -106,16 +70,7 @@
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
-    "cordova-plugin-touch-id": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
     "cordova-plugin-vibration": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
-    "cordova-plugin-wkwebview-engine-nextgen": {
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
     "cordova-plugin-x-socialsharing": {
@@ -124,20 +79,65 @@
     "cordova-plugin-zip": {
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
     "cordova-sqlite-storage-pgb": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
-    "phonegap-plugin-barcodescanner": {
-      "PACKAGE_NAME": "com.mendixcloud.todaycard"
-    },
-    "phonegap-plugin-push": {
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
     "uk.co.workingedge.phonegap.plugin.launchnavigator": {
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     },
+    "cordova-plugin-calendar": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "cordova-plugin-contacts": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "cordova-plugin-media": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "phonegap-plugin-push": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "cordova-plugin-wkwebview-engine-nextgen": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "cordova-plugin-crosswalk-webview": {
+      "XWALK_VERSION": "23+",
+      "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+      "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+      "XWALK_MODE": "embedded",
+      "XWALK_MULTIPLEAPK": "true",
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "com.crosswalk.cookies": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "cordova-plugin-touch-id": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "cordova-plugin-android-fingerprint-auth": {
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
     "cordova-android-support-gradle-release": {
-      "ANDROID_SUPPORT_VERSION": "27.+",
+      "ANDROID_SUPPORT_VERSION": "23.+",
+      "PACKAGE_NAME": "com.mendixcloud.todaycard"
+    },
+    "cordova-android-play-services-gradle-release": {
+      "PLAY_SERVICES_VERSION": "12.+",
       "PACKAGE_NAME": "com.mendixcloud.todaycard"
     }
   },

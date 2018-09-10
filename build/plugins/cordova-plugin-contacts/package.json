@@ -1,8 +1,35 @@
 {
-  "name": "cordova-plugin-contacts",
-  "version": "2.3.0",
-  "description": "Cordova Contacts Plugin",
-  "types": "./types/index.d.ts",
+  "_from": "cordova-plugin-contacts@2.3.0",
+  "_id": "cordova-plugin-contacts@2.3.0",
+  "_inBundle": false,
+  "_integrity": "sha1-UplVCZqiAmzUIa73ucJFRfmHz7M=",
+  "_location": "/cordova-plugin-contacts",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-contacts@2.3.0",
+    "name": "cordova-plugin-contacts",
+    "escapedName": "cordova-plugin-contacts",
+    "rawSpec": "2.3.0",
+    "saveSpec": null,
+    "fetchSpec": "2.3.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-contacts/-/cordova-plugin-contacts-2.3.0.tgz",
+  "_shasum": "529955099aa2026cd421aef7b9c24545f987cfb3",
+  "_spec": "cordova-plugin-contacts@2.3.0",
+  "_where": "/Users/conner/mendix/pg/pg-elevate-todaycard/build",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-contacts/issues"
+  },
+  "bundleDependencies": false,
   "cordova": {
     "id": "cordova-plugin-contacts",
     "platforms": [
@@ -17,10 +44,19 @@
       "windows"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/apache/cordova-plugin-contacts"
+  "deprecated": false,
+  "description": "Cordova Contacts Plugin",
+  "devDependencies": {
+    "jshint": "^2.6.0"
   },
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-contacts#readme",
   "keywords": [
     "cordova",
     "contacts",
@@ -36,20 +72,16 @@
     "cordova-windows8",
     "cordova-windows"
   ],
-  "scripts": {
-    "test": "npm run jshint",
-    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests"
-  },
-  "author": "Apache Software Foundation",
   "license": "Apache-2.0",
-  "engines": {
-    "cordovaDependencies": {
-      "3.0.0": {
-        "cordova": ">100"
-      }
-    }
+  "name": "cordova-plugin-contacts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-contacts.git"
   },
-  "devDependencies": {
-    "jshint": "^2.6.0"
-  }
+  "scripts": {
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
+    "test": "npm run jshint"
+  },
+  "types": "./types/index.d.ts",
+  "version": "2.3.0"
 }

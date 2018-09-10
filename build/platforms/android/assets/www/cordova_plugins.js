@@ -1,14 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
   {
-    "id": "com.crosswalk.cookies.cookies",
-    "file": "plugins/com.crosswalk.cookies/www/cookies.js",
-    "pluginId": "com.crosswalk.cookies",
-    "clobbers": [
-      "cookies"
-    ]
-  },
-  {
     "id": "com.darktalker.cordova.screenshot.screenshot",
     "file": "plugins/com.darktalker.cordova.screenshot/www/Screenshot.js",
     "pluginId": "com.darktalker.cordova.screenshot",
@@ -33,14 +25,6 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-android-fingerprint-auth.FingerprintAuth",
-    "file": "plugins/cordova-plugin-android-fingerprint-auth/www/FingerprintAuth.js",
-    "pluginId": "cordova-plugin-android-fingerprint-auth",
-    "clobbers": [
-      "FingerprintAuth"
-    ]
-  },
-  {
     "id": "cordova-plugin-android-permissions.Permissions",
     "file": "plugins/cordova-plugin-android-permissions/www/permissions.js",
     "pluginId": "cordova-plugin-android-permissions",
@@ -62,123 +46,6 @@ module.exports = [
     "pluginId": "cordova-plugin-battery-status",
     "clobbers": [
       "navigator.battery"
-    ]
-  },
-  {
-    "id": "cordova-plugin-calendar.Calendar",
-    "file": "plugins/cordova-plugin-calendar/www/Calendar.js",
-    "pluginId": "cordova-plugin-calendar",
-    "clobbers": [
-      "Calendar"
-    ]
-  },
-  {
-    "id": "cordova-plugin-camera.Camera",
-    "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
-    "pluginId": "cordova-plugin-camera",
-    "clobbers": [
-      "Camera"
-    ]
-  },
-  {
-    "id": "cordova-plugin-camera.CameraPopoverOptions",
-    "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
-    "pluginId": "cordova-plugin-camera",
-    "clobbers": [
-      "CameraPopoverOptions"
-    ]
-  },
-  {
-    "id": "cordova-plugin-camera.camera",
-    "file": "plugins/cordova-plugin-camera/www/Camera.js",
-    "pluginId": "cordova-plugin-camera",
-    "clobbers": [
-      "navigator.camera"
-    ]
-  },
-  {
-    "id": "cordova-plugin-camera.CameraPopoverHandle",
-    "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
-    "pluginId": "cordova-plugin-camera",
-    "clobbers": [
-      "CameraPopoverHandle"
-    ]
-  },
-  {
-    "id": "cordova-plugin-contacts.contacts",
-    "file": "plugins/cordova-plugin-contacts/www/contacts.js",
-    "pluginId": "cordova-plugin-contacts",
-    "clobbers": [
-      "navigator.contacts"
-    ]
-  },
-  {
-    "id": "cordova-plugin-contacts.Contact",
-    "file": "plugins/cordova-plugin-contacts/www/Contact.js",
-    "pluginId": "cordova-plugin-contacts",
-    "clobbers": [
-      "Contact"
-    ]
-  },
-  {
-    "id": "cordova-plugin-contacts.convertUtils",
-    "file": "plugins/cordova-plugin-contacts/www/convertUtils.js",
-    "pluginId": "cordova-plugin-contacts"
-  },
-  {
-    "id": "cordova-plugin-contacts.ContactAddress",
-    "file": "plugins/cordova-plugin-contacts/www/ContactAddress.js",
-    "pluginId": "cordova-plugin-contacts",
-    "clobbers": [
-      "ContactAddress"
-    ]
-  },
-  {
-    "id": "cordova-plugin-contacts.ContactError",
-    "file": "plugins/cordova-plugin-contacts/www/ContactError.js",
-    "pluginId": "cordova-plugin-contacts",
-    "clobbers": [
-      "ContactError"
-    ]
-  },
-  {
-    "id": "cordova-plugin-contacts.ContactField",
-    "file": "plugins/cordova-plugin-contacts/www/ContactField.js",
-    "pluginId": "cordova-plugin-contacts",
-    "clobbers": [
-      "ContactField"
-    ]
-  },
-  {
-    "id": "cordova-plugin-contacts.ContactFindOptions",
-    "file": "plugins/cordova-plugin-contacts/www/ContactFindOptions.js",
-    "pluginId": "cordova-plugin-contacts",
-    "clobbers": [
-      "ContactFindOptions"
-    ]
-  },
-  {
-    "id": "cordova-plugin-contacts.ContactName",
-    "file": "plugins/cordova-plugin-contacts/www/ContactName.js",
-    "pluginId": "cordova-plugin-contacts",
-    "clobbers": [
-      "ContactName"
-    ]
-  },
-  {
-    "id": "cordova-plugin-contacts.ContactOrganization",
-    "file": "plugins/cordova-plugin-contacts/www/ContactOrganization.js",
-    "pluginId": "cordova-plugin-contacts",
-    "clobbers": [
-      "ContactOrganization"
-    ]
-  },
-  {
-    "id": "cordova-plugin-contacts.ContactFieldType",
-    "file": "plugins/cordova-plugin-contacts/www/ContactFieldType.js",
-    "pluginId": "cordova-plugin-contacts",
-    "merges": [
-      ""
     ]
   },
   {
@@ -443,20 +310,6 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-geolocation.geolocation",
-    "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
-    "pluginId": "cordova-plugin-geolocation",
-    "clobbers": [
-      "navigator.geolocation"
-    ]
-  },
-  {
-    "id": "cordova-plugin-geolocation.PositionError",
-    "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
-    "pluginId": "cordova-plugin-geolocation",
-    "runs": true
-  },
-  {
     "id": "cordova-plugin-globalization.GlobalizationError",
     "file": "plugins/cordova-plugin-globalization/www/GlobalizationError.js",
     "pluginId": "cordova-plugin-globalization",
@@ -482,19 +335,216 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-media.MediaError",
-    "file": "plugins/cordova-plugin-media/www/MediaError.js",
-    "pluginId": "cordova-plugin-media",
+    "id": "cordova-plugin-network-information.network",
+    "file": "plugins/cordova-plugin-network-information/www/network.js",
+    "pluginId": "cordova-plugin-network-information",
     "clobbers": [
-      "window.MediaError"
+      "navigator.connection",
+      "navigator.network.connection"
     ]
   },
   {
-    "id": "cordova-plugin-media.Media",
-    "file": "plugins/cordova-plugin-media/www/Media.js",
-    "pluginId": "cordova-plugin-media",
+    "id": "cordova-plugin-network-information.Connection",
+    "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+    "pluginId": "cordova-plugin-network-information",
     "clobbers": [
-      "window.Media"
+      "Connection"
+    ]
+  },
+  {
+    "id": "cordova-plugin-secure-storage.SecureStorage",
+    "file": "plugins/cordova-plugin-secure-storage/www/securestorage.js",
+    "pluginId": "cordova-plugin-secure-storage",
+    "clobbers": [
+      "SecureStorage"
+    ]
+  },
+  {
+    "id": "cordova-plugin-secure-storage.sjcl_ss",
+    "file": "plugins/cordova-plugin-secure-storage/www/sjcl_ss.js",
+    "pluginId": "cordova-plugin-secure-storage",
+    "runs": true
+  },
+  {
+    "id": "cordova-plugin-spinner.SpinnerPlugin",
+    "file": "plugins/cordova-plugin-spinner/www/spinner-plugin.js",
+    "pluginId": "cordova-plugin-spinner",
+    "clobbers": [
+      "SpinnerPlugin"
+    ]
+  },
+  {
+    "id": "cordova-plugin-splashscreen.SplashScreen",
+    "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+    "pluginId": "cordova-plugin-splashscreen",
+    "clobbers": [
+      "navigator.splashscreen"
+    ]
+  },
+  {
+    "id": "cordova-plugin-statusbar.statusbar",
+    "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+    "pluginId": "cordova-plugin-statusbar",
+    "clobbers": [
+      "window.StatusBar"
+    ]
+  },
+  {
+    "id": "cordova-plugin-vibration.notification",
+    "file": "plugins/cordova-plugin-vibration/www/vibration.js",
+    "pluginId": "cordova-plugin-vibration",
+    "merges": [
+      "navigator.notification",
+      "navigator"
+    ]
+  },
+  {
+    "id": "cordova-plugin-x-socialsharing.SocialSharing",
+    "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+    "pluginId": "cordova-plugin-x-socialsharing",
+    "clobbers": [
+      "window.plugins.socialsharing"
+    ]
+  },
+  {
+    "id": "cordova-plugin-zip.Zip",
+    "file": "plugins/cordova-plugin-zip/zip.js",
+    "pluginId": "cordova-plugin-zip",
+    "clobbers": [
+      "zip"
+    ]
+  },
+  {
+    "id": "cordova-sqlite-storage-pgb.SQLitePlugin",
+    "file": "plugins/cordova-sqlite-storage-pgb/www/SQLitePlugin.js",
+    "pluginId": "cordova-sqlite-storage-pgb",
+    "clobbers": [
+      "SQLitePlugin"
+    ]
+  },
+  {
+    "id": "uk.co.workingedge.phonegap.plugin.launchnavigator.LaunchNavigator",
+    "file": "plugins/uk.co.workingedge.phonegap.plugin.launchnavigator/www/android/launchnavigator.js",
+    "pluginId": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+    "clobbers": [
+      "launchnavigator"
+    ]
+  },
+  {
+    "id": "cordova-plugin-calendar.Calendar",
+    "file": "plugins/cordova-plugin-calendar/www/Calendar.js",
+    "pluginId": "cordova-plugin-calendar",
+    "clobbers": [
+      "Calendar"
+    ]
+  },
+  {
+    "id": "cordova-plugin-camera.Camera",
+    "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+    "pluginId": "cordova-plugin-camera",
+    "clobbers": [
+      "Camera"
+    ]
+  },
+  {
+    "id": "cordova-plugin-camera.CameraPopoverOptions",
+    "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+    "pluginId": "cordova-plugin-camera",
+    "clobbers": [
+      "CameraPopoverOptions"
+    ]
+  },
+  {
+    "id": "cordova-plugin-camera.camera",
+    "file": "plugins/cordova-plugin-camera/www/Camera.js",
+    "pluginId": "cordova-plugin-camera",
+    "clobbers": [
+      "navigator.camera"
+    ]
+  },
+  {
+    "id": "cordova-plugin-camera.CameraPopoverHandle",
+    "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
+    "pluginId": "cordova-plugin-camera",
+    "clobbers": [
+      "CameraPopoverHandle"
+    ]
+  },
+  {
+    "id": "cordova-plugin-contacts.contacts",
+    "file": "plugins/cordova-plugin-contacts/www/contacts.js",
+    "pluginId": "cordova-plugin-contacts",
+    "clobbers": [
+      "navigator.contacts"
+    ]
+  },
+  {
+    "id": "cordova-plugin-contacts.Contact",
+    "file": "plugins/cordova-plugin-contacts/www/Contact.js",
+    "pluginId": "cordova-plugin-contacts",
+    "clobbers": [
+      "Contact"
+    ]
+  },
+  {
+    "id": "cordova-plugin-contacts.convertUtils",
+    "file": "plugins/cordova-plugin-contacts/www/convertUtils.js",
+    "pluginId": "cordova-plugin-contacts"
+  },
+  {
+    "id": "cordova-plugin-contacts.ContactAddress",
+    "file": "plugins/cordova-plugin-contacts/www/ContactAddress.js",
+    "pluginId": "cordova-plugin-contacts",
+    "clobbers": [
+      "ContactAddress"
+    ]
+  },
+  {
+    "id": "cordova-plugin-contacts.ContactError",
+    "file": "plugins/cordova-plugin-contacts/www/ContactError.js",
+    "pluginId": "cordova-plugin-contacts",
+    "clobbers": [
+      "ContactError"
+    ]
+  },
+  {
+    "id": "cordova-plugin-contacts.ContactField",
+    "file": "plugins/cordova-plugin-contacts/www/ContactField.js",
+    "pluginId": "cordova-plugin-contacts",
+    "clobbers": [
+      "ContactField"
+    ]
+  },
+  {
+    "id": "cordova-plugin-contacts.ContactFindOptions",
+    "file": "plugins/cordova-plugin-contacts/www/ContactFindOptions.js",
+    "pluginId": "cordova-plugin-contacts",
+    "clobbers": [
+      "ContactFindOptions"
+    ]
+  },
+  {
+    "id": "cordova-plugin-contacts.ContactName",
+    "file": "plugins/cordova-plugin-contacts/www/ContactName.js",
+    "pluginId": "cordova-plugin-contacts",
+    "clobbers": [
+      "ContactName"
+    ]
+  },
+  {
+    "id": "cordova-plugin-contacts.ContactOrganization",
+    "file": "plugins/cordova-plugin-contacts/www/ContactOrganization.js",
+    "pluginId": "cordova-plugin-contacts",
+    "clobbers": [
+      "ContactOrganization"
+    ]
+  },
+  {
+    "id": "cordova-plugin-contacts.ContactFieldType",
+    "file": "plugins/cordova-plugin-contacts/www/ContactFieldType.js",
+    "pluginId": "cordova-plugin-contacts",
+    "merges": [
+      ""
     ]
   },
   {
@@ -566,107 +616,41 @@ module.exports = [
     "runs": true
   },
   {
-    "id": "cordova-plugin-network-information.network",
-    "file": "plugins/cordova-plugin-network-information/www/network.js",
-    "pluginId": "cordova-plugin-network-information",
-    "clobbers": [
-      "navigator.connection",
-      "navigator.network.connection"
-    ]
-  },
-  {
-    "id": "cordova-plugin-network-information.Connection",
-    "file": "plugins/cordova-plugin-network-information/www/Connection.js",
-    "pluginId": "cordova-plugin-network-information",
-    "clobbers": [
-      "Connection"
-    ]
-  },
-  {
-    "id": "cordova-plugin-secure-storage.SecureStorage",
-    "file": "plugins/cordova-plugin-secure-storage/www/securestorage.js",
-    "pluginId": "cordova-plugin-secure-storage",
-    "clobbers": [
-      "SecureStorage"
-    ]
-  },
-  {
-    "id": "cordova-plugin-secure-storage.sjcl_ss",
-    "file": "plugins/cordova-plugin-secure-storage/www/sjcl_ss.js",
-    "pluginId": "cordova-plugin-secure-storage",
-    "runs": true
-  },
-  {
-    "id": "cordova-plugin-spinner.SpinnerPlugin",
-    "file": "plugins/cordova-plugin-spinner/www/spinner-plugin.js",
-    "pluginId": "cordova-plugin-spinner",
-    "clobbers": [
-      "SpinnerPlugin"
-    ]
-  },
-  {
-    "id": "cordova-plugin-splashscreen.SplashScreen",
-    "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-    "pluginId": "cordova-plugin-splashscreen",
-    "clobbers": [
-      "navigator.splashscreen"
-    ]
-  },
-  {
-    "id": "cordova-plugin-statusbar.statusbar",
-    "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
-    "pluginId": "cordova-plugin-statusbar",
-    "clobbers": [
-      "window.StatusBar"
-    ]
-  },
-  {
-    "id": "cordova-plugin-touch-id.TouchID",
-    "file": "plugins/cordova-plugin-touch-id/www/TouchID.js",
-    "pluginId": "cordova-plugin-touch-id",
-    "clobbers": [
-      "window.plugins.touchid"
-    ]
-  },
-  {
-    "id": "cordova-plugin-vibration.notification",
-    "file": "plugins/cordova-plugin-vibration/www/vibration.js",
-    "pluginId": "cordova-plugin-vibration",
-    "merges": [
-      "navigator.notification",
-      "navigator"
-    ]
-  },
-  {
-    "id": "cordova-plugin-x-socialsharing.SocialSharing",
-    "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
-    "pluginId": "cordova-plugin-x-socialsharing",
-    "clobbers": [
-      "window.plugins.socialsharing"
-    ]
-  },
-  {
-    "id": "cordova-plugin-zip.Zip",
-    "file": "plugins/cordova-plugin-zip/zip.js",
-    "pluginId": "cordova-plugin-zip",
-    "clobbers": [
-      "zip"
-    ]
-  },
-  {
-    "id": "cordova-sqlite-storage-pgb.SQLitePlugin",
-    "file": "plugins/cordova-sqlite-storage-pgb/www/SQLitePlugin.js",
-    "pluginId": "cordova-sqlite-storage-pgb",
-    "clobbers": [
-      "SQLitePlugin"
-    ]
-  },
-  {
     "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
     "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
     "pluginId": "phonegap-plugin-barcodescanner",
     "clobbers": [
       "cordova.plugins.barcodeScanner"
+    ]
+  },
+  {
+    "id": "cordova-plugin-geolocation.geolocation",
+    "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
+    "pluginId": "cordova-plugin-geolocation",
+    "clobbers": [
+      "navigator.geolocation"
+    ]
+  },
+  {
+    "id": "cordova-plugin-geolocation.PositionError",
+    "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+    "pluginId": "cordova-plugin-geolocation",
+    "runs": true
+  },
+  {
+    "id": "cordova-plugin-media.MediaError",
+    "file": "plugins/cordova-plugin-media/www/MediaError.js",
+    "pluginId": "cordova-plugin-media",
+    "clobbers": [
+      "window.MediaError"
+    ]
+  },
+  {
+    "id": "cordova-plugin-media.Media",
+    "file": "plugins/cordova-plugin-media/www/Media.js",
+    "pluginId": "cordova-plugin-media",
+    "clobbers": [
+      "window.Media"
     ]
   },
   {
@@ -678,105 +662,75 @@ module.exports = [
     ]
   },
   {
-    "id": "uk.co.workingedge.phonegap.plugin.launchnavigator.LaunchNavigator",
-    "file": "plugins/uk.co.workingedge.phonegap.plugin.launchnavigator/www/android/launchnavigator.js",
-    "pluginId": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+    "id": "com.crosswalk.cookies.cookies",
+    "file": "plugins/com.crosswalk.cookies/www/cookies.js",
+    "pluginId": "com.crosswalk.cookies",
     "clobbers": [
-      "launchnavigator"
+      "cookies"
+    ]
+  },
+  {
+    "id": "cordova-plugin-touch-id.TouchID",
+    "file": "plugins/cordova-plugin-touch-id/www/TouchID.js",
+    "pluginId": "cordova-plugin-touch-id",
+    "clobbers": [
+      "window.plugins.touchid"
+    ]
+  },
+  {
+    "id": "cordova-plugin-android-fingerprint-auth.FingerprintAuth",
+    "file": "plugins/cordova-plugin-android-fingerprint-auth/www/FingerprintAuth.js",
+    "pluginId": "cordova-plugin-android-fingerprint-auth",
+    "clobbers": [
+      "FingerprintAuth"
     ]
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-<<<<<<< HEAD
-    "com.crosswalk.cookies": "0.0.1",
-    "com.darktalker.cordova.screenshot": "0.1.5",
-    "com.telerik.plugins.nativepagetransitions": "0.6.5",
-    "cordova-build-architecture": "1.0.3",
-    "cordova-plugin-actionsheet": "2.3.3",
-    "cordova-plugin-android-fingerprint-auth": "1.4.0",
-    "cordova-plugin-android-permissions": "0.10.0",
-    "cordova-plugin-app-version": "0.1.8",
-    "cordova-plugin-battery-status": "1.1.2",
-    "cordova-plugin-compat": "1.2.0",
-    "cordova-plugin-calendar": "4.5.5",
-    "cordova-plugin-camera": "2.4.0",
-    "cordova-plugin-contacts": "2.3.0",
-    "cordova-plugin-cookieemperor": "1.0.0",
-    "cordova-plugin-crosswalk-webview": "2.3.0",
-    "cordova-plugin-device": "1.1.2",
-    "cordova-plugin-device-motion": "1.2.1",
-    "cordova-plugin-device-orientation": "1.0.3",
-    "cordova-plugin-dialogs": "1.2.1",
-    "cordova-plugin-file": "4.2.0",
-    "cordova-plugin-file-transfer": "1.5.1",
-    "cordova-plugin-geolocation": "2.2.0",
-    "cordova-plugin-globalization": "1.0.3",
-    "cordova-plugin-inappbrowser": "1.4.0",
-    "cordova-plugin-media": "2.3.0",
-    "cordova-plugin-media-capture": "1.4.2",
-    "cordova-plugin-network-information": "1.2.1",
-    "cordova-plugin-secure-storage": "2.4.0",
-    "cordova-plugin-spinner": "1.1.0",
-    "cordova-plugin-splashscreen": "4.1.0",
-    "cordova-plugin-statusbar": "2.3.0",
-    "cordova-plugin-touch-id": "3.2.0",
-    "cordova-plugin-vibration": "2.1.1",
-    "cordova-plugin-whitelist": "1.2.2",
-    "cordova-plugin-wkwebview-engine-nextgen": "1.0.2",
-    "cordova-plugin-x-socialsharing": "5.0.11",
-    "cordova-plugin-zip": "3.1.0",
-    "cordova-sqlite-storage-pgb": "0.1.0",
-    "phonegap-plugin-barcodescanner": "6.0.5",
-    "phonegap-plugin-push": "1.5.3",
-    "uk.co.workingedge.phonegap.plugin.launchnavigator": "2.9.11",
-    "cordova-android-support-gradle-release": "1.2.0",
-    "cordova-android-play-services-gradle-release": "1.4.3"
-=======
-  "com.crosswalk.cookies": "0.0.1",
   "com.darktalker.cordova.screenshot": "0.1.5",
   "com.telerik.plugins.nativepagetransitions": "0.6.5",
-  "cordova-android-play-services-gradle-release": "1.4.2",
   "cordova-build-architecture": "1.0.3",
   "cordova-plugin-actionsheet": "2.3.3",
-  "cordova-plugin-android-fingerprint-auth": "1.4.0",
   "cordova-plugin-android-permissions": "0.10.0",
   "cordova-plugin-app-version": "0.1.8",
   "cordova-plugin-battery-status": "1.1.2",
-  "cordova-plugin-calendar": "4.5.5",
-  "cordova-plugin-camera": "2.4.0",
-  "cordova-plugin-contacts": "2.3.0",
   "cordova-plugin-cookieemperor": "1.0.0",
-  "cordova-plugin-crosswalk-webview": "2.3.0",
   "cordova-plugin-device": "1.1.2",
   "cordova-plugin-device-motion": "1.2.1",
   "cordova-plugin-device-orientation": "1.0.3",
   "cordova-plugin-dialogs": "1.2.1",
   "cordova-plugin-file": "4.2.0",
   "cordova-plugin-file-transfer": "1.5.1",
-  "cordova-plugin-geolocation": "2.2.0",
   "cordova-plugin-globalization": "1.0.3",
   "cordova-plugin-inappbrowser": "1.4.0",
-  "cordova-plugin-media": "2.3.0",
-  "cordova-plugin-media-capture": "1.4.2",
   "cordova-plugin-network-information": "1.2.1",
   "cordova-plugin-secure-storage": "2.4.0",
   "cordova-plugin-spinner": "1.1.0",
   "cordova-plugin-splashscreen": "4.1.0",
   "cordova-plugin-statusbar": "2.3.0",
-  "cordova-plugin-touch-id": "3.2.0",
   "cordova-plugin-vibration": "2.1.1",
-  "cordova-plugin-whitelist": "1.2.2",
-  "cordova-plugin-wkwebview-engine-nextgen": "1.0.2",
   "cordova-plugin-x-socialsharing": "5.0.11",
   "cordova-plugin-zip": "3.1.0",
+  "cordova-plugin-whitelist": "1.2.2",
   "cordova-sqlite-storage-pgb": "0.1.0",
-  "phonegap-plugin-barcodescanner": "6.0.5",
-  "phonegap-plugin-push": "1.5.3",
   "uk.co.workingedge.phonegap.plugin.launchnavigator": "2.9.11",
-  "cordova-android-support-gradle-release": "1.4.4"
->>>>>>> b68100bc5564c7511eb485f5736ef18ddf4ab565
+  "cordova-plugin-calendar": "4.5.5",
+  "cordova-plugin-camera": "2.4.0",
+  "cordova-plugin-contacts": "2.3.0",
+  "cordova-plugin-media-capture": "1.4.2",
+  "phonegap-plugin-barcodescanner": "6.0.5",
+  "cordova-plugin-geolocation": "2.2.0",
+  "cordova-plugin-media": "2.3.0",
+  "phonegap-plugin-push": "1.5.3",
+  "cordova-plugin-wkwebview-engine-nextgen": "1.0.2",
+  "cordova-plugin-crosswalk-webview": "2.3.0",
+  "com.crosswalk.cookies": "0.0.1",
+  "cordova-plugin-touch-id": "3.2.0",
+  "cordova-plugin-android-fingerprint-auth": "1.4.0",
+  "cordova-android-support-gradle-release": "1.2.0",
+  "cordova-android-play-services-gradle-release": "1.4.3"
 };
 // BOTTOM OF METADATA
 });

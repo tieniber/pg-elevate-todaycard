@@ -1,25 +1,52 @@
 {
-  "name": "cordova-plugin-wkwebview-engine-nextgen",
-  "version": "1.1.0",
+  "_from": "cordova-plugin-wkwebview-engine-nextgen@^1.1.0",
+  "_id": "cordova-plugin-wkwebview-engine-nextgen@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-tyJO1zn2m34OyaNi/OeabzyaAp+tq3+CfP17teQjZ119A8+EhQnNFSb+U7sdRU3eJtjNel4tbsGoSxWJtQhM/w==",
+  "_location": "/cordova-plugin-wkwebview-engine-nextgen",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-wkwebview-engine-nextgen@^1.1.0",
+    "name": "cordova-plugin-wkwebview-engine-nextgen",
+    "escapedName": "cordova-plugin-wkwebview-engine-nextgen",
+    "rawSpec": "^1.1.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.1.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-wkwebview-engine-nextgen/-/cordova-plugin-wkwebview-engine-nextgen-1.1.0.tgz",
+  "_shasum": "2d6df9e72cc87353812731977d974022705bc598",
+  "_spec": "cordova-plugin-wkwebview-engine-nextgen@^1.1.0",
+  "_where": "/Users/conner/mendix/pg/pg-elevate-todaycard/build",
+  "author": {
+    "name": "Apache Cordova"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Mendix B.V"
+    }
+  ],
+  "deprecated": false,
   "description": "Cordova WKWebView next generation",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "jshint": "^2.6.0"
   },
   "keywords": [
     "cordova",
     "wkwebview"
   ],
-  "scripts": {
-    "test": "npm run jshint",
-    "jshint": "node node_modules/jshint/bin/jshint src"
-  },
-  "author": "Apache Cordova",
-  "contributors": [{
-    "name": "Mendix B.V"
-  }],
   "license": "Apache-2.0",
-  "devDependencies": {
-    "jshint": "^2.6.0"
-  }
+  "main": "index.js",
+  "name": "cordova-plugin-wkwebview-engine-nextgen",
+  "scripts": {
+    "jshint": "node node_modules/jshint/bin/jshint src",
+    "test": "npm run jshint"
+  },
+  "version": "1.1.0"
 }

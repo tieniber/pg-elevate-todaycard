@@ -17,10 +17,8 @@
   },
   "cordova-build-architecture": {
     "source": {
-      "type": "git",
-      "url": "https://github.com/MBuchalik/cordova-build-architecture.git",
-      "subdir": ".",
-      "ref": "v1.0.3"
+      "type": "registry",
+      "id": "https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.3"
     },
     "is_top_level": true,
     "variables": {}
@@ -59,9 +57,8 @@
   },
   "cordova-plugin-cookieemperor": {
     "source": {
-      "type": "git",
-      "url": "https://github.com/rtk/cordova-cookie-emperor.git",
-      "subdir": "."
+      "type": "registry",
+      "id": "https://github.com/rtk/cordova-cookie-emperor.git"
     },
     "is_top_level": true,
     "variables": {}
@@ -109,7 +106,7 @@
   "cordova-plugin-compat": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-compat"
+      "id": "cordova-plugin-compat@^1.0.0"
     },
     "is_top_level": false,
     "variables": {}
@@ -212,10 +209,8 @@
   },
   "cordova-sqlite-storage-pgb": {
     "source": {
-      "type": "git",
-      "url": "https://github.com/mendix/Cordova-sqlite-storage-pgb.git",
-      "subdir": ".",
-      "ref": "storage-master"
+      "type": "registry",
+      "id": "https://github.com/mendix/Cordova-sqlite-storage-pgb.git#storage-master"
     },
     "is_top_level": true,
     "variables": {}
@@ -316,9 +311,8 @@
   },
   "com.crosswalk.cookies": {
     "source": {
-      "type": "git",
-      "url": "https://github.com/dokoto/crosswalk-cookies.git",
-      "subdir": "."
+      "type": "registry",
+      "id": "https://github.com/dokoto/crosswalk-cookies.git"
     },
     "is_top_level": true,
     "variables": {}
@@ -339,6 +333,16 @@
     "is_top_level": true,
     "variables": {}
   },
+  "cordova-android-support-gradle-release": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-android-support-gradle-release@1.2.0"
+    },
+    "is_top_level": true,
+    "variables": {
+      "ANDROID_SUPPORT_VERSION": "23.+"
+    }
+  },
   "cordova-android-play-services-gradle-release": {
     "source": {
       "type": "registry",
@@ -348,13 +352,5 @@
     "variables": {
       "PLAY_SERVICES_VERSION": "12.+"
     }
-  },
-  "cordova-android-support-gradle-release": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-android-support-gradle-release"
-    },
-    "is_top_level": true,
-    "variables": {}
   }
 }

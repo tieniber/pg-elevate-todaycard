@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "url": "https://todaycard-test.mendixcloud.com",
-=======
-  "url": "http://192.168.0.110:8080",
->>>>>>> b68100bc5564c7511eb485f5736ef18ddf4ab565
+  "url": "http://192.168.0.108:8080",
   "enableOffline": false,
   "updateAsync": false,
   "persistentSession": {

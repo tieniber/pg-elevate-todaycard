@@ -1,8 +1,36 @@
 {
-  "name": "cordova-plugin-secure-storage",
-  "version": "2.4.0",
-  "description": "Secure storage plugin for iOS & Android",
-  "author": "Yiorgis Gozadinos <ggozad@crypho.com>",
+  "_from": "cordova-plugin-secure-storage@2.4.0",
+  "_id": "cordova-plugin-secure-storage@2.4.0",
+  "_inBundle": false,
+  "_integrity": "sha1-3wnJF648h21sA80zNFQoQls9odY=",
+  "_location": "/cordova-plugin-secure-storage",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-secure-storage@2.4.0",
+    "name": "cordova-plugin-secure-storage",
+    "escapedName": "cordova-plugin-secure-storage",
+    "rawSpec": "2.4.0",
+    "saveSpec": null,
+    "fetchSpec": "2.4.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-secure-storage/-/cordova-plugin-secure-storage-2.4.0.tgz",
+  "_shasum": "df09c917ae3c876d6c03cd33345428425b3da1d6",
+  "_spec": "cordova-plugin-secure-storage@2.4.0",
+  "_where": "/Users/conner/mendix/pg/pg-elevate-todaycard/build",
+  "author": {
+    "name": "Yiorgis Gozadinos",
+    "email": "ggozad@crypho.com"
+  },
+  "bugs": {
+    "url": "https://github.com/crypho/cordova-plugin-secure-storage/issues"
+  },
+  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Demetris Manikas",
@@ -18,6 +46,13 @@
       "windows"
     ]
   },
+  "deprecated": false,
+  "description": "Secure storage plugin for iOS & Android",
+  "devDependencies": {
+    "cordova-plugin-test-framework": ">=1.0.0",
+    "eslint": ""
+  },
+  "homepage": "https://github.com/crypho/cordova-plugin-secure-storage#readme",
   "keywords": [
     "cordova",
     "security",
@@ -30,21 +65,15 @@
     "cordova-windows",
     "cordova-browser"
   ],
+  "license": "MIT",
   "main": "www/securestorage.js",
+  "name": "cordova-plugin-secure-storage",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/crypho/cordova-plugin-secure-storage.git"
   },
   "scripts": {
-    "eslint": "./node_modules/.bin/eslint www/securestorage.js tests/tests.js"
+    "eslint": "eslint www/securestorage.js tests/tests.js"
   },
-  "devDependencies": {
-    "cordova-plugin-test-framework": ">=1.0.0",
-    "eslint": ""
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/crypho/cordova-plugin-secure-storage/issues"
-  },
-  "homepage": "https://github.com/crypho/cordova-plugin-secure-storage#readme"
+  "version": "2.4.0"
 }

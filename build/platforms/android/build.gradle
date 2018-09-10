@@ -92,12 +92,12 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "cordova-android-play-services-gradle-release/todaycard-cordova-android-play-services-gradle-release.gradle"
 apply from: "cordova-build-architecture/todaycard-architecture.gradle"
-apply from: "cordova-plugin-crosswalk-webview/todaycard-xwalk.gradle"
 apply from: "phonegap-plugin-barcodescanner/todaycard-barcodescanner.gradle"
 apply from: "phonegap-plugin-push/todaycard-push.gradle"
+apply from: "cordova-plugin-crosswalk-webview/todaycard-xwalk.gradle"
 apply from: "cordova-android-support-gradle-release/todaycard-cordova-android-support-gradle-release.gradle"
+apply from: "cordova-android-play-services-gradle-release/todaycard-cordova-android-play-services-gradle-release.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()

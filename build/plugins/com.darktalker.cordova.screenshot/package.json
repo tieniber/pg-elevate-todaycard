@@ -1,7 +1,35 @@
 {
-  "name": "com.darktalker.cordova.screenshot",
-  "version": "0.1.6",
-  "description": "screenshot PhoneGap Plugin for Android",
+  "_from": "com.darktalker.cordova.screenshot@0.1.6",
+  "_id": "com.darktalker.cordova.screenshot@0.1.6",
+  "_inBundle": false,
+  "_integrity": "sha1-ZHpTRQ+WFyGbYyg/WGaF4nzblrM=",
+  "_location": "/com.darktalker.cordova.screenshot",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "com.darktalker.cordova.screenshot@0.1.6",
+    "name": "com.darktalker.cordova.screenshot",
+    "escapedName": "com.darktalker.cordova.screenshot",
+    "rawSpec": "0.1.6",
+    "saveSpec": null,
+    "fetchSpec": "0.1.6"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/com.darktalker.cordova.screenshot/-/com.darktalker.cordova.screenshot-0.1.6.tgz",
+  "_shasum": "647a53450f9617219b63283f586685e27cdb96b3",
+  "_spec": "com.darktalker.cordova.screenshot@0.1.6",
+  "_where": "/Users/conner/mendix/pg/pg-elevate-todaycard/build",
+  "author": {
+    "name": "Hongbo LU"
+  },
+  "bugs": {
+    "url": "https://github.com/gitawego/cordova-screenshot/issues"
+  },
+  "bundleDependencies": false,
   "cordova": {
     "id": "com.darktalker.cordova.screenshot",
     "platforms": [
@@ -10,10 +38,15 @@
       "osx"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gitawego/cordova-screenshot.git"
-  },
+  "deprecated": false,
+  "description": "screenshot PhoneGap Plugin for Android",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/gitawego/cordova-screenshot#readme",
   "keywords": [
     "cordova",
     "screenshot",
@@ -22,16 +55,11 @@
     "cordova-ios",
     "cordova-osx"
   ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.0.0"
-    }
-  ],
-  "author": "Hongbo LU",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gitawego/cordova-screenshot/issues"
+  "name": "com.darktalker.cordova.screenshot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitawego/cordova-screenshot.git"
   },
-  "homepage": "https://github.com/gitawego/cordova-screenshot#readme"
+  "version": "0.1.6"
 }
