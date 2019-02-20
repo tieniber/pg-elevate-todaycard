@@ -1,5 +1,5 @@
 {
-  "url": "http://10.104.105.33:8081",
+  "url": "https://todaycard-test.mendixcloud.com",
   "enableOffline": false,
   "updateAsync": false,
   "persistentSession": {

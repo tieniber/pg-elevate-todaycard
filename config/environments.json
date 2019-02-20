@@ -1,18 +1,33 @@
 {
     "test": {
-        "name": "TodayCardtest",
-        "identifier": "com.mendixcloud.todaycardtest",
-        "url": "https://todaycard-test.mendixcloud.com"
+        "name": "TodayTest",
+        "identifier": "com.mendixcloud.todaycard",
+        "url": "https://todaycard-test.mendixcloud.com",
+		"version": "1.0.5",
+		"debugAndroid": true,
+		"permissions": {
+			"privacy": false
+		}
     },
     "acceptance": {
-        "name": "TodayCard",
+        "name": "TodayAccp",
         "identifier": "com.mendixcloud.todaycard",
-        "url": "https://todaycard-accp.mendixcloud.com"
+        "url": "https://todaycard-accp.mendixcloud.com",
+		"version": "1.0.5",
+		"debugAndroid": true,
+		"permissions": {
+			"privacy": false
+		}
     },
     "production": {
-        "name": "TodayCard",
+        "name": "Today",
         "identifier": "com.mendixcloud.todaycard",
-        "url": "https://todaycard.mendixcloud.com"
+        "url": "https://todaycard.mendixcloud.com",
+		"version": "1.0.5",
+		"debugAndroid": false,
+		"permissions": {
+			"privacy": true
+		}
     },
     "local": {
         "name": "TodayCardLocal",

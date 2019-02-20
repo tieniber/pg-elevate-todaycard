@@ -1,0 +1,11 @@
+{
+  "url": "https://todaycard-test.mendixcloud.com",
+  "enableOffline": false,
+  "updateAsync": false,
+  "persistentSession": {
+	  "enabled": true,
+	  "forceSecurity": true
+  },
+  "username": "",
+  "password": ""
+}

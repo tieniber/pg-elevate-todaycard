@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>TodayCard App</title>
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, minimum-scale=1, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+<link href="../www/css/index.css" rel="stylesheet"><link href="../www/css/bundle.css" rel="stylesheet"><link href="../www/css/custom.css" rel="stylesheet"></head>
+
+<body dir="ltr" class="mx-hybridapp">
+    <div id="content"></div>
+
+    <div id="mx-app" class="mx-main-container">
+        <div id="mxalert" class="mx-container">
+			<div class="mx-valign-table error_img_center">
+				<div class="mx-valign-cell">
+					<img src="img/error.png">
+				</div>
+			</div>
+			<p id="mxalert_message" class="custom_alert_msg">A error occurred and our technical team will resolve this issue shortly.  Please check your internet connection to make sure its not causing the error. Call Customer Support for immediate assistance.</p>
+			<div class="mx-alert-footer">
+				<button id="mxalert_button" class="mx-hybridapp-button">OK</button>
+			</div>
+		</div>
+
+        <div id="mx-loader-container" class="mx-valign-table">
+            <div class="mx-valign-cell">
+                <div class="mx-loader">
+                    <!--<img src="img/loader.gif" />-->
+					<img src="img/loader-large.gif" />
+                    <div class="mx-message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mx-login-container" class="mx-hybridapp-wrapper">
+        <div class="mx-hybridapp-login">
+            <div id="mx-login-error" class="mx-hybridapp-title">Sign in</div>
+            <div class="mx-hybridapp-formgroup">
+                <input id="mx-username" class="mx-hybridapp-formgroup-input" type="text" autocorrect="off" autocapitalize="none" placeholder="User name">
+                <input id="mx-password" class="mx-hybridapp-formgroup-input" type="password" autocorrect="off" autocapitalize="none" placeholder="Password">
+            </div>
+            <button id="mx-execute-login" class="mx-hybridapp-button">Sign in</button>
+        </div>
+    </div>
+
+    <div id="mx-pin-container" class="mx-hybridapp-wrapper">
+        <div class="mx-hybridapp-login">
+            <div id="mx-pin-error" class="mx-hybridapp-title" style="text-align:center"></div>
+
+            <div class="mx-hybridapp-formgroup mx-hybridapp-formgroup-pins">
+                <input class="mx-hybridapp-formgroup-input" type="password" autocorrect="off" autocapitalize="none" maxlength="1">
+                <input class="mx-hybridapp-formgroup-input" type="password" autocorrect="off" autocapitalize="none" maxlength="1">
+                <input class="mx-hybridapp-formgroup-input" type="password" autocorrect="off" autocapitalize="none" maxlength="1">
+                <input class="mx-hybridapp-formgroup-input" type="password" autocorrect="off" autocapitalize="none" maxlength="1">
+                <input class="mx-hybridapp-formgroup-input" type="password" autocorrect="off" autocapitalize="none" maxlength="1">
+            </div>
+
+            <button id="mx-confirm-pin" class="mx-hybridapp-button today-button-primary">Confirm</button>
+			<div style="text-align:center">
+				<button id="mx-forgot-pin" class="mx-hybridapp-forget-button mx-hybridapp-link today-button-forgot-pin">Cancel</button>
+			</div>
+        </div>
+    </div>
+
+    <script src="cordova.js"></script>
+	<script type="text/javascript" src="../www/js/ioconfig_Elevate.js" async></script>
+	<script type="text/javascript" src="../www/js/ioeablackbox_Elevate.js" async></script>
+	<script>
+        document.addEventListener('deviceready', function() {
+            
+			var successCallback1 = function (result)  {
+			//alert("inside success1");
+		if(result){
+			alert('This version of Today Card only runs on unmodified OS versions. The app cannot run on a jailbroken device');
+			navigator.app.exitApp();			
+		}
+	};
+	
+	var errorCallback1 = function (error) {
+	//alert('inside errorback');
+	};
+	var failureCallback = function (error) {
+	//alert('inside failure');
+    
+	};
+		rootdetection.isDeviceRooted(successCallback1, errorCallback1);
+		jailbreakdetection.isJailbroken(successCallback1, failureCallback);
+			
+			
+			
+			
+			
+			var server = "https://todaycard.mendixcloud.com";
+            var fingerprint = "F8 FD 79 7A 73 48 E5 B0 9E 70 42 2B 15 D0 8C D4 5E F3 66 74 F8 B7 CF 5A 36 16 07 0D E8 73 BE 8A";
+//alert("inside script");
+            window.plugins.sslCertificateChecker.check(
+                successCallback,
+                errorCallback,
+                server,
+                fingerprint);
+
+            function successCallback(message) {
+               // alert('Secure Connection success message');
+                // Message is always: CONNECTION_SECURE. Do nothing.
+                // Now do something with the trusted server.
+            }
+
+            function errorCallback(message) {
+                //alert('error message');
+                if (message == "CONNECTION_NOT_SECURE") {
+                                                                                // There is likely a man in the middle attack going on, be careful!
+                                                                                alert("Unsecure connection. Please exit from the app.");
+																				$('.button-loginPage').hide();
+                                                                                //navigator.app.exitApp();//iOS doesn't support this.       
+                                                                                var parent = document.querySelector(".mx-name-layoutGrid1");;
+                                                                                var child = document.querySelector(".ContinueJS");
+                                                                                parent.removeChild(child);                                                                          
+                    
+                } else if (message.indexOf("CONNECTION_FAILED") > -1) {
+                    // There was no connection (yet). Internet may be down. Try again (a few times) after a little timeout.
+					// Commenting is out since the behavior is not consistent across iOS and Android. 
+				    // alert("Connection couldn't be established to the server.");
+                }
+            }
+        });
+    </script>
+    <script>
+		document.addEventListener('deviceready', function() {
+        // wait helper
+			StatusBar.overlaysWebView(false);
+			StatusBar.overlaysWebView(true);
+        function waitFor(fnCondition, succesCallback, errorCallBack, timeoutMs, interval) {
+            var waitTime = 0;
+            var id = setInterval(function() {
+                waitTime += interval;
+                if (waitTime > timeoutMs) {
+                    clearInterval(id);
+                    errorCallBack();
+                    return;
+                }
+                if (fnCondition()) {
+                    clearInterval(id);
+                    succesCallback();
+                    return;
+                }
+            }, interval);
+        }
+
+		
+        // dojoConfig waiter
+        function waitForDojoConfig(fnCallback) {
+            waitFor(function() {
+                return window.dojoConfig;
+            }, function() {
+                console.log("dojoConfig available");
+                fnCallback();
+            }, function() {
+                console.log("dojoConfig not created");
+            }, 90000, 10);
+        }
+
+        // -------------
+        // set the value
+        // -------------
+        waitForDojoConfig(function() {
+            window.dojoConfig.server.timeout = 60 * 1000; // 60 seconds
+        });
+	});
+    </script>
+	<script>
+        var pausedate;
+        document.addEventListener("pause",function() {
+
+            pausedate = Date.now();
+				
+            try {
+				var IsRememberMeActive = localStorage.getItem("mx-user-remember-me");
+				if(IsRememberMeActive==null || (IsRememberMeActive != null && IsRememberMeActive=="false"))
+				{
+					document.querySelector(".input-loginPage-username input").value = "";
+				}
+                document.querySelector(".input-loginPage-password input").value = "";
+
+            }
+            catch (error) {
+                //alert('error:'+error);
+            }
+
+            //var exec = require("cordova/exec");
+
+        });
+
+        document.addEventListener("resume", function() {
+			
+            var timeoutMilliSec = 300000;
+
+            if (localStorage.getItem("mx-dashboard") === "true") {
+                if (((Date.now()) - pausedate) > timeoutMilliSec) {
+					
+                    console.log("Timer expired. logging out");
+                    localStorage.setItem("mx-session-timed-out", "true");
+                    localStorage.setItem("mx-user-finger", "false");
+                    localStorage.setItem("mx-user-pin", "false");
+                    localStorage.setItem("mx-user-token", "false");
+                    mx.session.logout();
+                    mx.reload();
+                }
+                else {
+				
+                    localStorage.setItem("mx-session-timed-out", "false");
+                }
+            }
+            else{
+				//This is causing biometrics token loosing issue in Android. Commenting it out.
+                //mx.reload();
+            }
+        });
+    </script>
+	<script type="text/javascript">
+		document.addEventListener("deviceready", function() {
+			Keyboard.shrinkView(true);
+		}, false);
+	</script>
+	<script type="text/javascript">
+		document.addEventListener("backbutton", function() {
+			event.preventDefault();
+		}, false);
+	</script>
+	<script type="text/javascript">
+		document.addEventListener("focusout", function (event) {
+		  const targetNode = event.target
+		  
+		  if (targetNode) {
+			const tagName = targetNode.tagName.toLowerCase()
+			
+			if (targetNode.type != 'submit' && (tagName == 'input' || tagName == 'textarea')) {
+			  htmlNode.style.height = '100.1vh'
+			  
+			  setTimeout(function () {
+				htmlNode.style.height = '100vh'
+			  }, 50)
+			}
+		  }
+		});
+	</script>
+	<script type="text/javascript">
+	document.addEventListener("deviceReady", function() {
+    if(device.platform === "iOS") {
+		document.addEventListener("resign", function(){console.log('resign');window.navigator.splashscreen.show();},false);
+        document.addEventListener("active", function(){console.log('active');window.navigator.splashscreen.hide();},false);
+    } 
+	});
+	</script>
+	<!--<input TYPE="text" NAME="ioBlackBox" id="ioBlackBox"> //Set the black box data in a element -->
+<script type="text/javascript" src="../www/js/bundle.js"></script></body>
+</html>

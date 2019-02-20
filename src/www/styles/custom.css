@@ -1,0 +1,43 @@
+*{
+    font-family: WorkSansRegular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.today-button-primary {
+    background: #f96302;
+    border-radius: 3px;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+}
+
+.today-button-primary:focus, .today-button-primary:hover, .today-button-primary:active 
+{
+	background-color: #f96302;
+}
+
+.today-button-forgot-pin {
+    color: #f96302;
+    display: inline;
+	text-decoration:underline;
+}
+.mx-hybridapp-button{
+	background-color: #f96302;
+}
+.custom_alert_msg{
+	text-align: center;
+    padding: 15px;
+    color: #6a6f7b;
+    font-size: 20px;
+    word-spacing: 1px;
+    line-height: 1.5;
+}
+.error_img_center{
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 45%;
+    margin-bottom: 10%;
+}
+#mxalert {
+    display: none;
+    font-weight: 400;
+}
