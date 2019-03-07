@@ -11,8 +11,9 @@ MxApp.onClientReady(function(mx) {
         return mx.session.sessionStore.remove()
             .then(function() {
                 return new Promise(function(resolve, reject) {
-                    window.localStorage.setItem("mx-user-finger", "false");
-                    window.localStorage.setItem("mx-user-pin", "false");
+                    //Set an intent for this !session! to not user finger or touch by setting sessionStorage
+                    window.sessionStorage.setItem("mx-user-finger", "false");
+                    window.sessionStorage.setItem("mx-user-pin", "false");
                     window.localStorage.setItem("mx-user-token", "false");
                     console.log("killing session on the server");
                     mx.data.action({
